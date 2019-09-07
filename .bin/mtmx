@@ -1,0 +1,16 @@
+#!/bin/zsh
+
+tmux new-session -d -s "main"
+tmux rename-window "main"
+tmux send-keys "n" C-m
+tmux split-window -h -t main
+tmux send-keys "vis" C-m
+tmux send-keys " " C-m
+tmux select-pane -t 0  # Selects the nnn pane.
+tmux split-window -v
+tmux new-window -n "irc"
+tmux send-keys "sleep 60; weechat" C-m
+tmux select-window -t "main"
+tmux select-pane -t 1  # Selects the vpn pane.
+tmux send-keys "sudo pvpn -cc"
+tmux -2 a -t main

@@ -1,0 +1,23 @@
+#!/bin/zsh
+
+# Whether to initialize mathpix.
+# When using this command remotely please use
+# stmx r | or with whatever number of arguments
+# just to avoid launching stuff that I don't really want.
+# hehe.
+
+if [ $# -eq 0 ]
+then
+	mathpix-snipping-tool &
+fi
+
+# Rest of the setup.
+insync start &
+tmux new-session -d -s "stats"
+tmux rename-window "stats"
+tmux send-keys "htop" C-m
+tmux split-window -h -t stats
+tmux send-keys "nvt" C-m
+tmux split-window -v -t stats
+tmux send-keys "conda activate base; s-tui" C-m
+tmux -2 a -t stats
