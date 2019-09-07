@@ -62,14 +62,14 @@ super + ctrl + c
 # ______________    
 
 # Autopresel (split window in its largest dimension)
-ctrl + space + super + h
+ctrl + space + super 
 	auto-presel
 	
 # Presel window for splitting in certain direction
 alt + ctrl + {a,s,w,d}
 	bspc node -p \~{west,south,north,east} -i
 
-alt + ctrl + {h,j,k,l}
+alt + super + {h,j,k,l}
 	bspc node -p \~{west,south,north,east}
 
 alt + ctrl + {Left,Down,Up,Right}
@@ -143,8 +143,8 @@ super +  {Left,Down,Up,Right}
 super + shift + {a,s,w,d}
 	windowgrabber {west,south,north,east}
 
-#super + shift + {h,j,k,l}
-#	windowgrabber {west,south,north,east}
+super + shift + {h,j,k,l}
+	windowgrabber {west,south,north,east}
 	
 # Different style of movement: transplant into window in chosen direction
 super + shift + {Left,Down,Up,Right}
@@ -154,8 +154,8 @@ super + shift + {Left,Down,Up,Right}
 super + ctrl + {a,s,w,d}
 	bspwm_resize.sh {west,south,north,east}
 
-#super + ctrl + {h,j,k,l}
-#	bspwm_resize.sh {west,south,north,east}
+super + ctrl + {h,j,k,l}
+	bspwm_resize.sh {west,south,north,east}
 	
 super + ctrl + {Left,Down,Up,Right}
 	bspwm_resize.sh {west,south,north,east}
