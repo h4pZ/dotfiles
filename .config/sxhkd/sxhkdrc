@@ -256,7 +256,7 @@ super + space
 
 # Triggered by jus tapping super 
 super + shift + space
-	rofi -show
+	rofi -show-icons -show
 
 super + y
 	xdo show -N Polybar
@@ -291,6 +291,9 @@ super + shift + e
 Print
 	flameshot gui
 
+# Take an screenshot
+ctrl + Print
+    ~/.config/bspwm/misc/screenshot
 	
 #
 # Media keys
