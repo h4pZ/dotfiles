@@ -1,0 +1,5 @@
+configuration {
+	modi:"drun,window";
+	theme:"~/.config/rofi/colors-rofi-dark.rasi";
+}
+
