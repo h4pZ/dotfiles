@@ -45,7 +45,7 @@ offset-x = 2.5%
 offset-y = 1%
 radius = 0.0
 fixed-center = true
-bottom = false
+bottom = true 
 
 background = ${colors.background}
 foreground = ${colors.foreground}
@@ -57,7 +57,7 @@ border-size = 0
 border-color = ${xrdb:color7:#222}
 
 padding-left = 0
-padding-right = 1
+padding-right = 0
 
 module-margin-left = 1
 module-margin-right = 1
@@ -95,17 +95,98 @@ wm-restack = bspwm
 cursor-click = pointer
 cursor-scroll = ns-resize
 
-[bar/HDMI-1]
-monitor = ${env:MONITOR:HDMI-1}
-width = 90%
+[bar/HDMI-0-desktops]
+monitor = ${env:MONITOR:HDMI-0}
+width = 251
 height = 27
-offset-x = 5%
+offset-x = 25 
 offset-y = 1%
 radius = 0.0
 fixed-center = true
 ;separator = |
-bottom = false
+bottom = true 
 
+background = ${colors.background}
+foreground = ${colors.foreground}
+
+line-size = 0 
+line-color = ${xrdb:color1:#222}
+
+border-size = 0
+border-color = ${xrdb:color7:#222}
+
+padding-left = 0
+padding-right = 0
+
+module-margin-left = 1
+module-margin-right = 1
+
+font-0 = "IBM Plex Mono Text:pixelsize=10;1"
+font-1 = "IBM Plex Sans:pixelsize=10;1"
+font-2 = "siji:pixelsize=10;1"
+font-3 = "Arial:pixelsize=10;1"
+font-4 = "Noto Sans CJK TC:pixelsize=10:weight=bold;1"
+font-5 = "BABEL Unicode:pixelsize=12:weight=bold;1"
+font-6 = "Symbol:pixelsize=10;1"
+
+modules-left = bspwm 
+modules-center =  
+modules-right = 
+
+
+[bar/HDMI-0-date]
+monitor = ${env:MONITOR:HDMI-0}
+width = 170
+height = 27
+offset-x = 1525 
+offset-y = 1%
+radius = 0.0
+fixed-center = true
+;separator = |
+bottom = true 
+
+background = ${colors.background}
+foreground = ${colors.foreground}
+
+line-size = 0 
+line-color = ${xrdb:color1:#222}
+
+border-size = 0
+border-color = ${xrdb:color7:#222}
+
+padding-left = 0
+padding-right = 0
+
+module-margin-left = 1
+module-margin-right = 1
+
+font-0 = "IBM Plex Sans:pixelsize=10;1"
+font-1 = "IBM Plex Sans:pixelsize=10;1"
+font-2 = "siji:pixelsize=10;1"
+font-3 = "Arial:pixelsize=10;1"
+font-4 = "Noto Sans CJK TC:pixelsize=10:weight=bold;1"
+font-5 = "BABEL Unicode:pixelsize=12:weight=bold;1"
+font-6 = "Symbol:pixelsize=10;1"
+
+modules-left =  
+modules-center = date 
+modules-right = 
+    
+wm-restack = bspwm
+cursor-click = pointer
+cursor-scroll = ns-resize
+
+[bar/HDMI-0-others]
+monitor = ${env:MONITOR:HDMI-0}
+width = 182 
+height = 27
+offset-x = 1713
+offset-y = 1%
+radius = 0.0
+fixed-center = true 
+separator = "  "
+bottom = true 
+module-margin = 4
 background = ${colors.background}
 foreground = ${colors.foreground}
 
@@ -121,6 +202,48 @@ padding-right = 1
 module-margin-left = 1
 module-margin-right = 1
 
+font-0 = "IBM Plex Sans:pixelsize=10;1"
+font-1 = "IBM Plex Sans:pixelsize=10;1"
+font-2 = "siji:pixelsize=10;1"
+font-3 = "Arial:pixelsize=10;1"
+font-4 = "Noto Sans CJK TC:pixelsize=10:weight=bold;1"
+font-5 = "BABEL Unicode:pixelsize=12:weight=bold;1"
+font-6 = "Symbol:pixelsize=10;1"
+
+modules-left =  
+modules-center =  
+modules-right = vpn-openvpn-isrunning pulseaudio xkeyboard
+    
+wm-restack = bspwm
+cursor-click = pointer
+cursor-scroll = ns-resize
+
+[bar/HDMI-1-desktops]
+monitor = ${env:MONITOR:HDMI-1}
+width = 251
+height = 27
+offset-x = 25 
+offset-y = 1%
+radius = 0.0
+fixed-center = true
+;separator = |
+bottom = true 
+
+background = ${colors.background}
+foreground = ${colors.foreground}
+
+line-size = 0 
+line-color = ${xrdb:color1:#222}
+
+border-size = 0
+border-color = ${xrdb:color7:#222}
+
+padding-left = 0
+padding-right = 0
+
+module-margin-left = 1
+module-margin-right = 1
+
 font-0 = "IBM Plex Mono Text:pixelsize=10;1"
 font-1 = "IBM Plex Sans:pixelsize=10;1"
 font-2 = "siji:pixelsize=10;1"
@@ -130,30 +253,101 @@ font-5 = "BABEL Unicode:pixelsize=12:weight=bold;1"
 font-6 = "Symbol:pixelsize=10;1"
 
 modules-left = bspwm 
+modules-center =  
+modules-right = 
+
+
+
+[bar/HDMI-1-spotify]
+monitor = ${env:MONITOR:HDMI-1}
+width = 20%
+height = 27
+offset-x = 40%
+offset-y = 1%
+radius = 0.0
+fixed-center = true
+;separator = |
+bottom = true 
+
+background = ${colors.background}
+foreground = ${colors.foreground}
+
+line-size = 0 
+line-color = ${xrdb:color1:#222}
+
+border-size = 0
+border-color = ${xrdb:color7:#222}
+
+padding-left = 0
+padding-right = 0
+
+module-margin-left = 1
+module-margin-right = 1
+
+font-0 = "IBM Plex Mono Text:pixelsize=10;1"
+font-1 = "IBM Plex Sans:pixelsize=10;1"
+font-2 = "siji:pixelsize=10;1"
+font-3 = "Arial:pixelsize=10;1"
+font-4 = "Noto Sans CJK TC:pixelsize=10:weight=bold;1"
+font-5 = "BABEL Unicode:pixelsize=12:weight=bold;1"
+font-6 = "Symbol:pixelsize=10;1"
+
+modules-left =  
 modules-center = spotify 
 modules-right = 
+    
+wm-restack = bspwm
+cursor-click = pointer
+cursor-scroll = ns-resize
+
+
+[bar/HDMI-1-tray]
+monitor = ${env:MONITOR:HDMI-1}
+width = 1%
+height = 27
+offset-x = 98%
+offset-y = 1%
+radius = 0.0
+fixed-center = true
+;separator = |
+bottom = true 
+
+background = ${colors.background}
+foreground = ${colors.foreground}
+
+line-size = 0 
+line-color = ${xrdb:color1:#222}
+
+border-size = 0
+border-color = ${xrdb:color7:#222}
+
+padding-left = 0
+padding-right = 0
+
+module-margin-left = 1
+module-margin-right = 1
+
+font-0 = "IBM Plex Mono Text:pixelsize=10;1"
+font-1 = "IBM Plex Sans:pixelsize=10;1"
+font-2 = "siji:pixelsize=10;1"
+font-3 = "Arial:pixelsize=10;1"
+font-4 = "Noto Sans CJK TC:pixelsize=10:weight=bold;1"
+font-5 = "BABEL Unicode:pixelsize=12:weight=bold;1"
+font-6 = "Symbol:pixelsize=10;1"
+
+modules-left =  
+modules-center = empty  
+modules-right =   
     
 
 tray-position = right
 tray-padding = 3
 ;tray-transparent = true
 ;tray-background = #
-
-
 wm-restack = bspwm
-;wm-restack = i3
-
-;override-redirect = true
-
-;scroll-up = bspwm-desknext
-;scroll-down = bspwm-deskprev
-
-;scroll-up = i3wm-wsnext
-;scroll-down = i3wm-wsprev
 
 cursor-click = pointer
 cursor-scroll = ns-resize
-
 
 
 [module/xwindow]
@@ -371,7 +565,7 @@ format-disconnected =
 type = internal/date
 interval = 1
 
-date = "%Y-%m-%d"
+date = "%Y/%m/%d"
 date-alt = "%Y-%m-%d"
 
 time = %H:%M:%S
@@ -381,16 +575,16 @@ format-prefix =
 format-prefix-foreground = ${colors.foreground-alt}
 ;format-underline = #0a6cf5
 
-label = %time% %date%
+label = %time%  -  %date%
 
 [module/pulseaudio]
 type = internal/pulseaudio
 
 format-volume = <label-volume>
-label-volume = VOL %percentage%%
+label-volume = VOL %percentage%%  
 label-volume-foreground = ${root.foreground}
 
-label-muted = MUTED
+label-muted = "   MUTED   "
 label-muted-foreground = #666
 
 bar-volume-width = 10
@@ -616,4 +810,6 @@ type = custom/script
 exec = /home/h4pz/.config/polybar/polybar-scripts/vpn-openvpn-isrunning.sh
 interval = 30
 format-foreground = #AB224D
-;#AB224D
+
+[module/empty]
+type = custom/script
