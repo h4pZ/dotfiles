@@ -5,7 +5,7 @@ super + shift + q
 	bspc quit 1 && pkill lemonpanel && pkill lemonbar
 
 # Show keybindings
-super + shift + h
+super + shift + a
 	$TERMINAL -e keybindings.sh
 #
 # Window manipulation
