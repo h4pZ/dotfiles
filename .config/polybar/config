@@ -303,9 +303,9 @@ cursor-scroll = ns-resize
 
 [bar/HDMI-1-tray]
 monitor = ${env:MONITOR:HDMI-1}
-width = 1%
+width = 20 
 height = 27
-offset-x = 98%
+offset-x = 1875
 offset-y = 1%
 radius = 0.0
 fixed-center = true
@@ -335,15 +335,16 @@ font-4 = "Noto Sans CJK TC:pixelsize=10:weight=bold;1"
 font-5 = "BABEL Unicode:pixelsize=12:weight=bold;1"
 font-6 = "Symbol:pixelsize=10;1"
 
-modules-left =  
-modules-center = empty  
-modules-right =   
+modules-left =   
+modules-center = title  
+modules-right =  
     
 
-tray-position = right
+tray-position = right 
 tray-padding = 3
+tray-detached = true
 ;tray-transparent = true
-;tray-background = #
+tray-background = ${colors.background}
 wm-restack = bspwm
 
 cursor-click = pointer
@@ -390,7 +391,7 @@ label-focused-padding = 1
 
 label-occupied = %icon%
 label-occupied-padding = 1
-;label-occupied-foreground = #ffffff
+;label-occupied-foreground = #B67363
 
 label-urgent = %icon%!
 label-urgent-background = #AB224D
@@ -813,3 +814,7 @@ format-foreground = #AB224D
 
 [module/empty]
 type = custom/script
+
+[module/title]
+type = custom/script
+exec = echo ">"
