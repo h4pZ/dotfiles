@@ -57,9 +57,8 @@ noremap <Leader>y "*y
 noremap <Leader>p "*p
 noremap <Leader>Y "+y
 noremap <Leader>P "+p
-autocmd vimenter * NERDTree
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
-let g:miniBufExplBuffersNeeded = 1
+let g:miniBufExplBufersNeeded = 1
 
 " plugins
 Plugin 'tmhedberg/SimpylFold'
@@ -73,3 +72,7 @@ Bundle 'Valloric/YouCompleteMe'
 Plugin 'cjrh/vim-conda'
 Plugin 'chrisbra/Colorizer'
 Plugin 'weynhamz/vim-plugin-minibufexpl'
+Plugin 'lervag/vimtex'
+let g:tex_flavor='latex'
+let g:vimtex_view_method='zathura'
+let g:vimtex_quickfix_mode=0
