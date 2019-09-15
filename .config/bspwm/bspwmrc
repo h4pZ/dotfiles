@@ -141,3 +141,4 @@ bspc config presel_feedback_color "$color1"
 #bspc config presel_border_color "$color1"
 
 $HOME/.config/polybar/launch.sh
+insync start
