@@ -256,7 +256,7 @@ super + space
 
 # Triggered by jus tapping super 
 super + shift + space
-	rofi -show-icons -show
+	rofi -show-icons -font "IBM Plex Sans 12" -show
 
 super + y
 	xdo show -N Polybar
