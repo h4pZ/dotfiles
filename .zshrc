@@ -255,3 +255,6 @@ export NNN_BMS='w:~/Drive/h4pZ/pictures/wallbase;p:~/Drive/h4pZ/pictures;s:~/Dri
 conda deactivate
 alias emacs="emacs -nw"
 alias neofetch=" neofetch --backend kitty --source ~/Drive/h4pZ/pictures/random/rashed-alakroka-vibrance.jpg --package_managers off --gtk_shorthand off --gtk2 off --gtk3 off --uptime_shorthand tiny --memory_display off --config .neofetchrc"
+
+# Copy to clipboard stdout.
+alias copy='xclip -sel clip'
