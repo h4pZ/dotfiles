@@ -47,6 +47,7 @@ set encoding=utf-8
 
 set clipboard=unnamedplus
 set laststatus=2
+set nu
 
 let g:ycm_python_binary_path = '/home/h4pz/anaconda3/envs/main/bin/python'
 let g:colorizer_auto_color = 1
@@ -57,8 +58,7 @@ noremap <Leader>y "*y
 noremap <Leader>p "*p
 noremap <Leader>Y "+y
 noremap <Leader>P "+p
-autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
-let g:miniBufExplBufersNeeded = 1
+let g:miniBufExplBufersNeeded = 2
 
 " plugins
 Plugin 'tmhedberg/SimpylFold'
