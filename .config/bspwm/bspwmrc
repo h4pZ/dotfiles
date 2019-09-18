@@ -142,3 +142,4 @@ bspc config presel_feedback_color "$color1"
 
 $HOME/.config/polybar/launch.sh
 insync start
+polychromatic-tray-applet &
