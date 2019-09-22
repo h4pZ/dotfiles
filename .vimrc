@@ -48,6 +48,8 @@ set encoding=utf-8
 set clipboard=unnamedplus
 set laststatus=2
 set nu
+set colorcolumn=90
+set fileencoding=utf8
 
 let g:ycm_python_binary_path = '/home/h4pz/anaconda3/envs/main/bin/python'
 let g:colorizer_auto_color = 1
