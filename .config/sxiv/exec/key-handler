@@ -29,6 +29,9 @@ do
 		notify-send -i "$HOME/.config/wall" "Wallpaper changed.";;
 	"C-c")
 		echo -n "$file" | xclip -selection clipboard ;;
+
+	"C-d")
+		trash-put "$file" ;;
 	
 	"C-w")
 		cp "$file" ~/.config/wall &&
