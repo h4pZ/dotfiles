@@ -48,7 +48,7 @@ set encoding=utf-8
 set clipboard=unnamedplus
 set laststatus=2
 set nu
-set colorcolumn=90
+match ErrorMsg '\%>90v.\+'
 set fileencoding=utf8
 
 let g:ycm_python_binary_path = '/home/h4pz/anaconda3/envs/main/bin/python'
