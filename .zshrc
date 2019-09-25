@@ -210,8 +210,8 @@ fi
 unset __conda_setup
 # <<< conda initialize <<<
 
-alias lsa="ls -lah"
-alias lsl="ls -lh"
+alias lsa="exa -la"
+alias ls="exa -l"
 # h4pZ attach to sessions.
 alias astmx="tmux a -t stats"
 alias amtmx="tmux a -t main"
