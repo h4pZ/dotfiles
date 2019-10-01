@@ -79,6 +79,9 @@ bspc rule -a libreoffice state=tiled
 bspc rule -a '*:libreofficedev' state=tiled
 bspc rule -a '*:soffice' state=tiled
 bspc rule -a matplotlib state=floating center=true
+bspc rule -a Mathpix state=floating center=true
+bspc rule -a Peek state=floating center=true
+bspc rule -a zoom state=floating center=true
 bspc rule -a Toolbox state=floating center=true
 bspc rule -a Insync state=floating center=true
 bspc rule -a Steam state=floating
