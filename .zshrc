@@ -258,7 +258,7 @@ export NNN_PLUG='s:sxiv'
 
 conda deactivate
 alias emacs="emacs -nw"
-alias neofetch=" neofetch --backend kitty --source ~/Drive/h4pZ/pictures/random/tumblr_njmosgnzkR1sge1tko1_1280.jpg --package_managers off --gtk_shorthand off --gtk2 off --gtk3 off --uptime_shorthand tiny --memory_display off --config .neofetchrc"
+alias neofetch=" neofetch --backend kitty --source ~/Drive/h4pZ/pictures/random/rh.jpg --package_managers off --gtk_shorthand off --gtk2 off --gtk3 off --uptime_shorthand tiny --size 270px --memory_display off --config .neofetchrc"
 
 # Copy to clipboard stdout.
 alias copy='xclip -sel clip'
