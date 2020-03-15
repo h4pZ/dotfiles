@@ -50,6 +50,7 @@ set laststatus=2
 set nu
 match ErrorMsg '\%>90v.\+'
 set fileencoding=utf8
+set hlsearch
 
 let g:ycm_python_binary_path = '/home/h4pz/anaconda3/envs/main/bin/python'
 let g:colorizer_auto_color = 1

@@ -57,6 +57,7 @@ alias cp="cp -i"                                                # Confirm before
 alias df='df -h'                                                # Human-readable sizes
 alias free='free -m'                                            # Show sizes in MB
 alias gitu='git add . && git commit && git push'
+alias sxiv='sxiv -b -a'
 
 # Theming section  
 autoload -U compinit colors zcalc
@@ -251,10 +252,19 @@ alias icat="kitty +kitten icat"
 
 # Setting up the nnn bookmarks.
 export NNN_BMS='w:~/Drive/h4pZ/pictures/wallbase;p:~/Drive/h4pZ/pictures;s:~/Drive/h4pZ/universities/master/semesters/;c:~/Drive/h4pZ/code/;b:~/Drive/h4pZ/books/;d:~/Drive/h4pZ/'
+export NNN_NOTE='~/Drive/h4pZ/notes.txt'
+export NNN_USE_EDITOR=1
+export NNN_PLUG='s:sxiv'
 
 conda deactivate
 alias emacs="emacs -nw"
-alias neofetch=" neofetch --backend kitty --source ~/Drive/h4pZ/pictures/random/rashed-alakroka-vibrance.jpg --package_managers off --gtk_shorthand off --gtk2 off --gtk3 off --uptime_shorthand tiny --memory_display off --config .neofetchrc"
+alias neofetch=" neofetch --backend kitty --source ~/Drive/h4pZ/pictures/random/tumblr_njmosgnzkR1sge1tko1_1280.jpg --package_managers off --gtk_shorthand off --gtk2 off --gtk3 off --uptime_shorthand tiny --memory_display off --config .neofetchrc"
 
 # Copy to clipboard stdout.
 alias copy='xclip -sel clip'
+
+# VAR for JAX.
+export CUDA_DIR='/opt/cuda'
+
+# clock.
+alias tock='tock -m -c -s -C=6'

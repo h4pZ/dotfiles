@@ -12,5 +12,5 @@ tmux new-window -n "irc"
 tmux send-keys "sleep 60; weechat" C-m
 tmux select-window -t "main"
 tmux select-pane -t 1  # Selects the vpn pane.
-tmux send-keys "sudo pvpn -cc"
+tmux send-keys "sudo protonvpn c -cc SE"
 tmux -2 a -t main

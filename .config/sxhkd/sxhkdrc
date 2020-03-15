@@ -336,3 +336,11 @@ super + ctrl + space
 # Remove receptacles
 super + BackSpace
   for i in $(bspc query -N -n .leaf.!window.local); do bspc node $i -k; done
+
+# Suspend the pc.
+super + shift + y
+	systemctl suspend
+
+# Lock session.
+super + shift + u
+	light-locker-command -l

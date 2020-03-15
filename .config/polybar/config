@@ -29,8 +29,7 @@
 ;secondary = #997A96
 alert = #C57D85
 
-;background = ${xrdb:color0:#222}
-background = #D9080d18 
+background = ${xrdb:color0:#222}
 background-alt = ${xrdb:color0:#222}
 foreground = ${xrdb:color7:#222}
 foreground-alt = ${xrdb:color7:#222}
@@ -41,12 +40,12 @@ secondary = ${xrdb:color2:#222}
 [bar/HDMI-0-solid]
 monitor = ${env:MONITOR:HDMI-0}
 width = 100%
-height = 30 
+height = 30
 offset-x = 0%
 offset-y = 0%
 radius = 0.0
 fixed-center = true
-bottom = false 
+bottom = false
 
 background = ${colors.background}
 foreground = ${colors.foreground}
@@ -71,10 +70,10 @@ font-4 = "Noto Sans CJK TC:pixelsize=10:weight=bold;1"
 font-5 = "BABEL Unicode:pixelsize=10:weight=bold;1"
 font-6 = "Symbol:pixelsize=10;1"
 
-modules-left = bspwm 
-modules-center = date 
-modules-right = vpn-openvpn-isrunning pulseaudio xkeyboard 
-    
+modules-left =
+modules-center = bspwm
+modules-right = vpn-openvpn-isrunning pulseaudio xkeyboard
+
 wm-restack = bspwm
 cursor-click = pointer
 cursor-scroll = ns-resize
@@ -82,17 +81,17 @@ cursor-scroll = ns-resize
 [bar/HDMI-1-solid]
 monitor = ${env:MONITOR:HDMI-1}
 width = 100%
-height = 30 
+height = 30
 offset-x = 0%
 offset-y = 0%
 radius = 0.0
 fixed-center = true
-bottom = false 
+bottom = false
 
 background = ${colors.background}
 foreground = ${colors.foreground}
 
-line-size = 0
+line-size = 1
 line-color = ${xrdb:color1:#222}
 
 border-size = 0
@@ -113,10 +112,10 @@ font-4 = "Noto Sans CJK TC:pixelsize=10:weight=bold;1"
 font-5 = "BABEL Unicode:pixelsize=10:weight=bold;1"
 font-6 = "Symbol:pixelsize=10;1"
 
-modules-left = bspwm 
-modules-center = spotify 
-modules-right =  
-    
+modules-left =
+modules-center = bspwm
+modules-right =
+
 
 tray-position = right
 wm-restack = bspwm
@@ -131,7 +130,7 @@ offset-x = 2.5%
 offset-y = 1%
 radius = 0.0
 fixed-center = true
-bottom = true 
+bottom = true
 
 background = ${colors.background}
 foreground = ${colors.foreground}
@@ -157,10 +156,10 @@ font-4 = "Noto Sans CJK TC:pixelsize=10:weight=bold;1"
 font-5 = "BABEL Unicode:pixelsize=12:weight=bold;1"
 font-6 = "Symbol:pixelsize=10;1"
 
-modules-left = bspwm 
-modules-center = date 
+modules-left = bspwm
+modules-center = date
 modules-right = vpn-openvpn-isrunning pulseaudio xkeyboard powermenu
-    
+
 
 ;tray-position = right
 ;tray-padding = 6
@@ -184,18 +183,12 @@ cursor-scroll = ns-resize
 [bar/HDMI-0-desktops]
 monitor = ${env:MONITOR:HDMI-0}
 width = 251
-height = 27
-offset-x = 25 
-offset-y = 1%
-radius = 0.0
-fixed-center = true
-;separator = |
-bottom = true 
+height = 27while true; do tput clear; date +"%H : %M : %S" | figlet ; sleep 1; done
 
 background = ${colors.background}
 foreground = ${colors.foreground}
 
-line-size = 0 
+line-size = 0
 line-color = ${xrdb:color1:#222}
 
 border-size = 0
@@ -215,26 +208,26 @@ font-4 = "Noto Sans CJK TC:pixelsize=10:weight=bold;1"
 font-5 = "BABEL Unicode:pixelsize=12:weight=bold;1"
 font-6 = "Symbol:pixelsize=10;1"
 
-modules-left = bspwm 
-modules-center =  
-modules-right = 
+modules-left = bspwm
+modules-center =
+modules-right =
 
 
 [bar/HDMI-0-date]
 monitor = ${env:MONITOR:HDMI-0}
 width = 170
 height = 27
-offset-x = 1525 
+offset-x = 1525
 offset-y = 1%
 radius = 0.0
 fixed-center = true
 ;separator = |
-bottom = true 
+bottom = true
 
 background = ${colors.background}
 foreground = ${colors.foreground}
 
-line-size = 0 
+line-size = 0
 line-color = ${xrdb:color1:#222}
 
 border-size = 0
@@ -254,29 +247,29 @@ font-4 = "Noto Sans CJK TC:pixelsize=10:weight=bold;1"
 font-5 = "BABEL Unicode:pixelsize=12:weight=bold;1"
 font-6 = "Symbol:pixelsize=10;1"
 
-modules-left =  
-modules-center = date 
-modules-right = 
-    
+modules-left =
+modules-center = date
+modules-right =
+
 wm-restack = bspwm
 cursor-click = pointer
 cursor-scroll = ns-resize
 
 [bar/HDMI-0-others]
 monitor = ${env:MONITOR:HDMI-0}
-width = 182 
+width = 182
 height = 27
 offset-x = 1713
 offset-y = 1%
 radius = 0.0
-fixed-center = true 
+fixed-center = true
 separator = "  "
-bottom = true 
+bottom = true
 module-margin = 4
 background = ${colors.background}
 foreground = ${colors.foreground}
 
-line-size = 0 
+line-size = 0
 line-color = ${xrdb:color1:#222}
 
 border-size = 0
@@ -296,10 +289,10 @@ font-4 = "Noto Sans CJK TC:pixelsize=10:weight=bold;1"
 font-5 = "BABEL Unicode:pixelsize=12:weight=bold;1"
 font-6 = "Symbol:pixelsize=10;1"
 
-modules-left =  
-modules-center =  
+modules-left =
+modules-center =
 modules-right = vpn-openvpn-isrunning pulseaudio xkeyboard
-    
+
 wm-restack = bspwm
 cursor-click = pointer
 cursor-scroll = ns-resize
@@ -308,17 +301,17 @@ cursor-scroll = ns-resize
 monitor = ${env:MONITOR:HDMI-1}
 width = 251
 height = 27
-offset-x = 25 
+offset-x = 25
 offset-y = 1%
 radius = 0.0
 fixed-center = true
 ;separator = |
-bottom = true 
+bottom = true
 
 background = ${colors.background}
 foreground = ${colors.foreground}
 
-line-size = 0 
+line-size = 0
 line-color = ${xrdb:color1:#222}
 
 border-size = 0
@@ -338,9 +331,9 @@ font-4 = "Noto Sans CJK TC:pixelsize=10:weight=bold;1"
 font-5 = "BABEL Unicode:pixelsize=12:weight=bold;1"
 font-6 = "Symbol:pixelsize=10;1"
 
-modules-left = bspwm 
-modules-center =  
-modules-right = 
+modules-left = bspwm
+modules-center =
+modules-right =
 
 
 
@@ -353,12 +346,12 @@ offset-y = 1%
 radius = 0.0
 fixed-center = true
 ;separator = |
-bottom = true 
+bottom = true
 
 background = ${colors.background}
 foreground = ${colors.foreground}
 
-line-size = 0 
+line-size = 0
 line-color = ${xrdb:color1:#222}
 
 border-size = 0
@@ -378,10 +371,10 @@ font-4 = "Noto Sans CJK TC:pixelsize=10:weight=bold;1"
 font-5 = "BABEL Unicode:pixelsize=12:weight=bold;1"
 font-6 = "Symbol:pixelsize=10;1"
 
-modules-left =  
-modules-center = spotify 
-modules-right = 
-    
+modules-left =
+modules-center = spotify
+modules-right =
+
 wm-restack = bspwm
 cursor-click = pointer
 cursor-scroll = ns-resize
@@ -389,19 +382,19 @@ cursor-scroll = ns-resize
 
 [bar/HDMI-1-tray]
 monitor = ${env:MONITOR:HDMI-1}
-width = 20 
+width = 20
 height = 27
 offset-x = 1875
 offset-y = 1%
 radius = 0.0
 fixed-center = true
 ;separator = |
-bottom = true 
+bottom = true
 
 background = ${colors.background}
 foreground = ${colors.foreground}
 
-line-size = 0 
+line-size = 0
 line-color = ${xrdb:color1:#222}
 
 border-size = 0
@@ -421,12 +414,12 @@ font-4 = "Noto Sans CJK TC:pixelsize=10:weight=bold;1"
 font-5 = "BABEL Unicode:pixelsize=12:weight=bold;1"
 font-6 = "Symbol:pixelsize=10;1"
 
-modules-left =   
-modules-center = title  
-modules-right =  
-    
+modules-left =
+modules-center = title
+modules-right =
 
-tray-position = right 
+
+tray-position = right
 tray-padding = 3
 tray-detached = true
 ;tray-transparent = true
@@ -471,16 +464,16 @@ label-unmounted-foreground = ${colors.foreground-alt}
 type = internal/bspwm
 
 label-focused = %icon%
-label-focused-foreground = #AB224D
-label-focused-underline= #AB224D
+label-focused-foreground = #db2760
+;label-focused-underline= #db2760
 label-focused-padding = 1
 
 label-occupied = %icon%
 label-occupied-padding = 1
-;label-occupied-foreground = #B67363
+label-occupied-foreground = #FFFFFF
 
 label-urgent = %icon%!
-label-urgent-background = #AB224D
+;label-urgent-background = #db2760
 label-urgent-foreground = ${colors.primary}
 label-urgent-padding = 1
 
@@ -489,28 +482,28 @@ label-empty-foreground = ${colors.secondary}
 label-empty-padding = 1
 
 ; Separator in between workspaces
-; label-separator = 
+; label-separator =
 
-ws-icon-0 = 1;ᚠ
-ws-icon-1 = 2;ᚢ
-ws-icon-2 = 3;ᚦ
-ws-icon-3 = 4;ᚩ
-ws-icon-4 = 5;ᚱ
-ws-icon-5 = 6;ᚳ
-ws-icon-6 = 7;ᚷ
-ws-icon-7 = 8;ᚹ
-ws-icon-8 = 9;ᚻ
-ws-icon-9 = 10;ᛀ
-ws-icon-10 = 11;ᛁ
-ws-icon-11 = 12;ᛤ
-ws-icon-12 = 13;ᛇ
-ws-icon-13 = 14;ᛈ
-ws-icon-14 = 15;ᛘ
-ws-icon-15 = 16;ᛋ
-ws-icon-16 = 17;ᛏ
-ws-icon-17 = 18;ᛒ
-ws-icon-18 = 19;ᛖ
-ws-icon-19 = 20;ᛗ
+ws-icon-0 = 1;•
+ws-icon-1 = 2;•
+ws-icon-2 = 3;•
+ws-icon-3 = 4;•
+ws-icon-4 = 5;•
+ws-icon-5 = 6;•
+ws-icon-6 = 7;•
+ws-icon-7 = 8;•
+ws-icon-8 = 9;•
+ws-icon-9 = 10;•
+ws-icon-10 = 11;•
+ws-icon-11 = 12;•
+ws-icon-12 = 13;•
+ws-icon-13 = 14;•
+ws-icon-14 = 15;•
+ws-icon-15 = 16;•
+ws-icon-16 = 17;•
+ws-icon-17 = 18;•
+ws-icon-18 = 19;•
+ws-icon-19 = 20;•
 
 
 [module/i3]
@@ -597,7 +590,7 @@ card = intel_backlight
 [module/cpu]
 type = internal/cpu
 interval = 2
-format-prefix = " "
+format-prefix = "CPU "
 format-prefix-foreground = ${colors.foreground-alt}
 format-underline = #f90000
 label = %percentage:2%%
@@ -605,7 +598,7 @@ label = %percentage:2%%
 [module/memory]
 type = internal/memory
 interval = 2
-format-prefix = " "
+format-prefix = "MEM "
 format-prefix-foreground = ${colors.foreground-alt}
 format-underline = #4bffdc
 label = %percentage_used%%
@@ -660,7 +653,7 @@ time-alt = %H:%M:%S
 
 format-prefix =
 format-prefix-foreground = ${colors.foreground-alt}
-;format-underline = #0a6cf5
+format-underline = #db2760
 
 label = %time% - %date%
 
@@ -668,7 +661,7 @@ label = %time% - %date%
 type = internal/pulseaudio
 
 format-volume = <label-volume>
-label-volume = VOL %percentage%%  
+label-volume = VOL %percentage%%
 label-volume-foreground = ${root.foreground}
 
 label-muted = "MUTED"
@@ -834,7 +827,7 @@ interval = 1
 accumulate-stats = true
 
 ; Consider an `UNKNOWN` interface state as up.
-; Some devices like USB network adapters have 
+; Some devices like USB network adapters have
 ; an unknown state, even when they're running
 ; Default: false
 unknown-as-up = true
@@ -865,7 +858,7 @@ format-packetloss = <animation-packetloss> <label-connected>
 ;   %linkspeed% [wired]
 
 ; Default: %ifname% %local_ip%
-label-connected = %downspeed:9% ↓%upspeed:9% ↑ 
+label-connected = %downspeed:9% ↓%upspeed:9% ↑
 label-connected-foreground = #eedccf
 
 ; Default: (none)

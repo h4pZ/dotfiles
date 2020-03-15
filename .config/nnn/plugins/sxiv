@@ -5,4 +5,4 @@
 # Shell: POSIX compliant
 # Author: Arun Prakash Jana
 
-sxiv -q -t -a * >/dev/null 2>&1 &
+sxiv -b -a -t -q * >/dev/null 2>&1 &
