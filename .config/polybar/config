@@ -45,7 +45,7 @@ offset-x = 0%
 offset-y = 0%
 radius = 0.0
 fixed-center = true
-bottom = false
+bottom = true 
 
 background = ${colors.background}
 foreground = ${colors.foreground}
@@ -56,8 +56,8 @@ line-color = ${xrdb:color1:#222}
 border-size = 0
 border-color = ${xrdb:color7:#222}
 
-padding-left = 0
-padding-right = 0
+padding-left = 3
+padding-right = 3
 
 module-margin-left = 1
 module-margin-right = 1
@@ -70,7 +70,7 @@ font-4 = "Noto Sans CJK TC:pixelsize=10:weight=bold;1"
 font-5 = "BABEL Unicode:pixelsize=10:weight=bold;1"
 font-6 = "Symbol:pixelsize=10;1"
 
-modules-left =
+modules-left = 
 modules-center = bspwm
 modules-right = vpn-openvpn-isrunning pulseaudio xkeyboard
 
@@ -86,7 +86,7 @@ offset-x = 0%
 offset-y = 0%
 radius = 0.0
 fixed-center = true
-bottom = false
+bottom = true 
 
 background = ${colors.background}
 foreground = ${colors.foreground}
@@ -97,8 +97,8 @@ line-color = ${xrdb:color1:#222}
 border-size = 0
 border-color = ${xrdb:color7:#222}
 
-padding-left = 0
-padding-right = 0
+padding-left = 3
+padding-right = 3
 
 module-margin-left = 1
 module-margin-right = 1
@@ -112,7 +112,7 @@ font-4 = "Noto Sans CJK TC:pixelsize=10:weight=bold;1"
 font-5 = "BABEL Unicode:pixelsize=10:weight=bold;1"
 font-6 = "Symbol:pixelsize=10;1"
 
-modules-left =
+modules-left = 
 modules-center = bspwm
 modules-right =
 
