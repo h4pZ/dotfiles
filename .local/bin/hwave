@@ -1,0 +1,25 @@
+#! /home/h4pz/anaconda3/envs/h4pz/bin/python
+
+import time
+import numpy as np
+from phue import Bridge
+
+# Connecting.
+ip = "192.168.1.79"
+b = Bridge(ip)
+
+# Parameters
+min_brightness = 54
+max_brightness = 164
+min_to_max = np.arange(min_brightness, max_brightness + 1, 10)
+max_to_min = min_to_max[::-1]
+cycle = np.concatenate([min_to_max, max_to_min])
+
+# Getting the lights
+lights = b.lights
+
+while True:
+    for brightness in cycle:
+        for l in lights:
+            l.brightness = int(brightness)
+            time.sleep(0.1)

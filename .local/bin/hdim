@@ -1,0 +1,28 @@
+#! /home/h4pz/anaconda3/envs/h4pz/bin/python
+
+import fire
+from phue import Bridge
+
+# Connecting.
+ip = "192.168.1.79"
+b = Bridge(ip)
+lights = b.lights
+
+# Parameters
+min_brightness = 0
+max_brightness = 254
+
+def main(new_brightness):
+    """Change the brightness of all the lights."""
+    for l in lights:
+        # Limit the new_brightness.
+        if new_brightness > max_brightness:
+            new_brightness = max_brightness
+        elif new_brightness < 0:
+            new_brightness = min_brightness
+
+        l.brightness = new_brightness
+
+
+if __name__ == "__main__":
+    fire.Fire(main)
