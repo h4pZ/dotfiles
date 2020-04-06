@@ -31,7 +31,7 @@ alert = #C57D85
 
 background = ${xrdb:color0:#222}
 background-alt = ${xrdb:color0:#222}
-foreground = ${xrdb:color7:#222}
+foreground = #ffffff
 foreground-alt = ${xrdb:color7:#222}
 primary = ${xrdb:color1:#222}
 secondary = ${xrdb:color2:#222}
@@ -62,9 +62,9 @@ padding-right = 3
 module-margin-left = 1
 module-margin-right = 1
 
-font-0 = "Office Code Pro:pixelsize=10;1"
-font-1 = "IBM Plex Sans:pixelsize=10;1"
-font-2 = "siji:pixelsize=10;1"
+font-0 = "Office Code Pro:pixelsize=10:weight=bold;1"
+font-1 = "IBM Plex Sans:pixelsize=10:weight=bold;1"
+font-2 = "siji:pixelsize=10:weight=bold;1"
 font-3 = "Arial:pixelsize=10;1"
 font-4 = "Noto Sans CJK TC:pixelsize=10:weight=bold;1"
 font-5 = "BABEL Unicode:pixelsize=10:weight=bold;1"
@@ -104,13 +104,13 @@ module-margin-left = 1
 module-margin-right = 1
 
 
-font-0 = "IBM Plex Mono Text:pixelsize=10;1"
-font-1 = "IBM Plex Sans:pixelsize=10;1"
-font-2 = "siji:pixelsize=10;1"
-font-3 = "Arial:pixelsize=10;1"
+font-0 = "IBM Plex Mono Text:pixelsize=10:weight=bold;1"
+font-1 = "IBM Plex Sans:pixelsize=10:weight=bold;1"
+font-2 = "siji:pixelsize=10:weight=bold;1"
+font-3 = "Arial:pixelsize=10:weight=bold;1"
 font-4 = "Noto Sans CJK TC:pixelsize=10:weight=bold;1"
 font-5 = "BABEL Unicode:pixelsize=10:weight=bold;1"
-font-6 = "Symbol:pixelsize=10;1"
+font-6 = "Symbol:pixelsize=10:weight=bold;1"
 
 modules-left =
 modules-center = bspwm
