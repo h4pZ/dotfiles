@@ -268,3 +268,6 @@ export CUDA_DIR='/opt/cuda'
 
 # clock.
 alias tock='tock -m -c -s -C=6'
+
+# For tensorflow.
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/cuda/lib64
