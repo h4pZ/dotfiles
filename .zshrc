@@ -20,8 +20,6 @@ zstyle ':completion:*' cache-path ~/.zsh/cache
 HISTFILE=~/.zhistory
 HISTSIZE=1000
 SAVEHIST=500
-#export EDITOR=/usr/bin/nano
-#export VISUAL=/usr/bin/nano
 WORDCHARS=${WORDCHARS//\/[&.;]}                                 # Don't consider certain characters part of the word
 
 
@@ -56,7 +54,6 @@ bindkey '^[[Z' undo                                             # Shift+tab undo
 alias cp="cp -i"                                                # Confirm before overwriting something
 alias df='df -h'                                                # Human-readable sizes
 alias free='free -m'                                            # Show sizes in MB
-alias gitu='git add . && git commit && git push'
 alias sxiv='sxiv -b -a'
 
 # Theming section  
@@ -68,9 +65,10 @@ colors
 setopt prompt_subst
 
 # Prompt (on left side) similar to default bash prompt, or redhat zsh prompt with colors
- #PROMPT="%(!.%{$fg[red]%}[%n@%m %1~]%{$reset_color%}# .%{$fg[green]%}[%n@%m %1~]%{$reset_color%}$ "
+#PROMPT="%(!.%{$fg[red]%}[%n@%m %1~]%{$reset_color%}# .%{$fg[green]%}[%n@%m %1~]%{$reset_color%} "
 # Maia prompt
-PROMPT="%B%{$fg[cyan]%}%(4~|%-1~/.../%2~|%~)%u%b >%{$fg[cyan]%}>%B%(?.%{$fg[cyan]%}.%{$fg[red]%})>%{$reset_color%}%b " # Print some system information when the shell is first started
+#PROMPT="%B%{$fg[cyan]%}%(4~|%-1~/.../%2~|%~)%u%b >%{$fg[cyan]%}>%B%(?.%{$fg[cyan]%}.%{$fg[red]%})>%{$reset_color%}%b " # Print some system information when the shell is first started
+PROMPT="%B%{$fg[cyan]%}%(4~|%-1~/.../%2~|%~)%u%b %{$fg[cyan]%}>%B%{$reset_color%}%b " # Print some system information when the shell is first started
 # Print a greeting message when shell is started
 #echo $USER@$HOST  $(uname -srm) $(lsb_release -rcs)
 ## Prompt on right side:
@@ -231,7 +229,7 @@ n()
 {
     export NNN_TMPFILE=${XDG_CONFIG_HOME:-$HOME/.config}/nnn/.lastd
 
-    nnn "$@"
+    nnn -e "$@"
 
     if [ -f $NNN_TMPFILE ]; then
             . $NNN_TMPFILE
@@ -242,7 +240,7 @@ n()
 # Import colorscheme from 'wal' asynchronously
 # &   # Run the process in the background.
 # ( ) # Hide shell job control messages.
-cat ~/.cache/wal/sequences
+#cat ~/.cache/wal/sequences
 
 # Setting up cargo from rust
 export PATH=$PATH:$HOME/.cargo/env
@@ -254,7 +252,9 @@ alias icat="kitty +kitten icat"
 export NNN_BMS='w:~/Drive/h4pZ/pictures/wallbase;p:~/Drive/h4pZ/pictures;s:~/Drive/h4pZ/universities/master/semesters/;c:~/Drive/h4pZ/code/;b:~/Drive/h4pZ/books/;d:~/Drive/h4pZ/'
 export NNN_NOTE='~/Drive/h4pZ/notes.txt'
 export NNN_USE_EDITOR=1
-export NNN_PLUG='s:sxiv'
+export NNN_PLUG='s:sxiv;c:code'
+export VISUAL=vim
+alias n='n -e'
 
 conda deactivate
 alias emacs="emacs -nw"
@@ -270,4 +270,4 @@ export CUDA_DIR='/opt/cuda'
 alias tock='tock -m -c -s -C=6'
 
 # For tensorflow.
-export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/cuda/lib64
+export LD_LIBRARY_PATH=/usr/local/cuda/lib64

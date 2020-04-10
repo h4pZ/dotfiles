@@ -230,15 +230,15 @@ super + ctrl + button4
 # app where your mouse was when you opened the menu. Smartsplit only chooses
 # biggest dimension of the window, MouseLaunch only cares which edge is closer.
 # mod5 is alt_gr (first key right from space) on most keyboards. 
-mod5 + @button1
-    MouseLaunch ; mygtkmenui -- .config/GTKmenu/LaunchMenu
+#mod5 + @button1
+#    MouseLaunch ; mygtkmenui -- .config/GTKmenu/LaunchMenu
 #	smartsplit ; dboxmenu
 
 # Spawn window manipulation menu
 # Mod1 is alt
 #    BspwmWindowMenu
-mod1 + @button1
-    mygtkmenui -- .config/GTKmenu/BspwmWindowMenui
+#mod1 + @button1
+#    mygtkmenui -- .config/GTKmenu/BspwmWindowMenui
 
 
 #
@@ -290,11 +290,15 @@ super + shift + e
 
 Print
 	flameshot gui
-
-# Take an screenshot
-ctrl + Print
-    ~/.config/bspwm/misc/screenshot
 	
+# start/stop a gif recording of a selection
+ctrl + Print
+  { giph -s -l -c 0.3\,0\,0.5\,0.3 ~/Videos/$(date +%s).gif, killall -INT -g giph }
+
+# start/stop a gif recording of a selection, upload to 0x0.st and copy url to clipboard
+ctrl + shift + Print
+  { giph -s -l -c 0.3\,0\,0.5\,0.3 | (trap '' INT; curl -F "file=@-" 0x0.st | xclip -selection clipboard), killall -INT -g giph }
+
 #
 # Media keys
 #

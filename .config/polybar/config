@@ -478,7 +478,7 @@ label-urgent-foreground = ${colors.primary}
 label-urgent-padding = 1
 
 label-empty = %icon%
-label-empty-foreground = ${colors.secondary}
+label-empty-foreground = #565f75
 label-empty-padding = 1
 
 ; Separator in between workspaces
