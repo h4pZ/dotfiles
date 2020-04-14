@@ -181,8 +181,8 @@ super + ctrl + b
 	bspc node @/ -E
 
 # Toggle automatic balancing of windows
-alt + b
-	euclid_balancer
+#alt + b
+#	euclid_balancer
 
 # Mirror and flip leaves of tree
 super + {comma,period}
