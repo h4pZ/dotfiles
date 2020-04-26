@@ -29,7 +29,7 @@
 ;secondary = #997A96
 alert = #C57D85
 
-background = ${xrdb:color0:#222}
+background = #00000000
 background-alt = ${xrdb:color0:#222}
 foreground = #ffffff
 foreground-alt = ${xrdb:color7:#222}
@@ -447,7 +447,7 @@ label-layout = %layout%
 
 label-indicator-padding = 2
 label-indicator-margin = 1
-label-indicator-background = ${colors.secondary}
+label-indicator-background =
 ;label-indicator-underline = ${colors.secondary}
 
 [module/filesystem]
@@ -464,7 +464,8 @@ label-unmounted-foreground = ${colors.foreground-alt}
 type = internal/bspwm
 
 label-focused = %icon%
-label-focused-foreground = #db2760
+label-focused-foreground = #c83844
+db2760
 ;label-focused-underline= #db2760
 label-focused-padding = 1
 
@@ -478,7 +479,7 @@ label-urgent-foreground = ${colors.primary}
 label-urgent-padding = 1
 
 label-empty = %icon%
-label-empty-foreground = #565f75
+label-empty-foreground = #4dffffff
 label-empty-padding = 1
 
 ; Separator in between workspaces
@@ -550,7 +551,7 @@ interval = 1
 ;format-prefix = ""
 format = <label>
 exec = /home/h4pz/anaconda3/bin/python /home/h4pz/polybar-spotify/spotify_status.py --font=1 -f '{play_pause} {song} - {artist}' -p '>,~' --playpause-font=1
-;format-underline = #1db954
+format-underline = #1db954
 
 
 [module/mpd]

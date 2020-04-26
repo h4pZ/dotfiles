@@ -105,7 +105,7 @@ source $ZSH/oh-my-zsh.sh
 alias cp="cp -i"                                                # Confirm before overwriting something
 alias df='df -h'                                                # Human-readable sizes
 alias free='free -m'                                            # Show sizes in MB
-alias sxiv='sxiv -b -a'
+#alias sxiv='sxiv -b -a'
 alias lsa="exa -la"
 alias ls="exa -l"
 alias astmx="tmux a -t stats"
