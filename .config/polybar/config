@@ -91,7 +91,7 @@ bottom = true
 background = ${colors.background}
 foreground = ${colors.foreground}
 
-line-size = 1
+line-size = 0
 line-color = ${xrdb:color1:#222}
 
 border-size = 0
@@ -379,6 +379,31 @@ wm-restack = bspwm
 cursor-click = pointer
 cursor-scroll = ns-resize
 
+[bar/systray]
+# As small as possible, polybar will resize it when items get added
+width = 1
+monitor = ${env:MONITOR:HDMI-1}
+# Whatever fits your needs
+height = 30
+
+# Bottom left to imitate gnome-shells systray
+bottom = true
+
+# REQUIRED for us to be able to move the window
+override-redirect = true
+
+modules-right = placeholder
+
+tray-position = left
+tray-maxsize = 16
+tray-padding = 8
+tray-transparent = false
+tray-background = #00282C34
+
+[module/placeholder]
+# Just a dummy module as polybar always requires at least one amodule
+type = custom/script
+width = 1
 
 [bar/HDMI-1-tray]
 monitor = ${env:MONITOR:HDMI-1}
@@ -550,7 +575,7 @@ type = custom/script
 interval = 1
 ;format-prefix = ""
 format = <label>
-exec = /home/h4pz/anaconda3/bin/python /home/h4pz/polybar-spotify/spotify_status.py --font=1 -f '{play_pause} {song} - {artist}' -p '>,~' --playpause-font=1
+exec = /home/h4pz/.config/polybar/polybar-scripts/spotify_status.py --font=1 -f '{play_pause} {song} - {artist}' -p '>,~' --playpause-font=1 --font=1
 format-underline = #1db954
 
 

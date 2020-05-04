@@ -27,8 +27,15 @@ do
 		cp "$file" ~/.config/wall &&
 		feh --bg-tile "$HOME/.config/wall" &
 		notify-send -i "$HOME/.config/wall" "Wallpaper changed.";;
+	"C-n")
+		echo -n "$file" | xclip -selection clipboard &&
+		notify-send -i "$PWD/$file" "$file copied to clipboard";;
+
 	"C-c")
-		echo -n "$file" | xclip -selection clipboard ;;
+		convert "$file" /tmp/tmp_sxiv_img.png &&
+		xclip -selection clipboard -target image/png /tmp/tmp_sxiv_img.png &&
+		notify-send -i /tmp/tmp_sxiv_img.png "Image copied to clipboard";;
+
 
 	"C-d")
 		trash-put "$file" ;;

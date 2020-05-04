@@ -64,18 +64,13 @@ noremap <Leader>P "+p
 let g:miniBufExplBufersNeeded = 2
 
 " plugins
-Plugin 'tmhedberg/SimpylFold'
-Plugin 'vim-scripts/indentpython.vim'
-Plugin 'vim-syntastic/syntastic'
-Plugin 'nvie/vim-flake8'
-Plugin 'scrooloose/nerdtree'
-Plugin 'kien/ctrlp.vim'
-Plugin 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
-Bundle 'Valloric/YouCompleteMe'
-Plugin 'cjrh/vim-conda'
-Plugin 'chrisbra/Colorizer'
-Plugin 'weynhamz/vim-plugin-minibufexpl'
-Plugin 'lervag/vimtex'
-let g:tex_flavor='latex'
-let g:vimtex_view_method='zathura'
-let g:vimtex_quickfix_mode=0
+Plugin 'lilydjwg/colorizer'
+
+
+
+
+" DRACULA
+packadd! dracula_pro
+syntax enable
+colorscheme dracula_pro_buffy
+hi Normal guibg=NONE ctermbg=NONE

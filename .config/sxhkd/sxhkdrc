@@ -66,13 +66,7 @@ ctrl + space + super
 	auto-presel
 	
 # Presel window for splitting in certain direction
-alt + ctrl + {a,s,w,d}
-	bspc node -p \~{west,south,north,east} -i
-
 alt + super + {h,j,k,l}
-	bspc node -p \~{west,south,north,east}
-
-alt + ctrl + {Left,Down,Up,Right}
 	bspc node -p \~{west,south,north,east}
 
 # Presel the desktop for splitting in certain direction
@@ -128,21 +122,12 @@ super + Tab
 	WindowSelector
 	
 #Focus windows by direction, works with multihead
-super +  {a,s,w,d}
-    focusmover {west,south,north,east}
-
 super +  {h,j,k,l}
-    focusmover {west,south,north,east}
-
-super +  {Left,Down,Up,Right}
     focusmover {west,south,north,east}
         	
 # Move tiled windows. Moving a tiled window to 
 # preselected one moves into preselection instead. 
 # Moving out of the screen should move the window to next monitor if possible
-super + shift + {a,s,w,d}
-	windowgrabber {west,south,north,east}
-
 super + shift + {h,j,k,l}
 	windowgrabber {west,south,north,east}
 	
@@ -203,8 +188,8 @@ super + button{4,5}
 # mouse bindings
 # __________________
 
-~button1
-	DidIClickDesktop.sh && gapgrab	
+#~button1
+#	DidIClickDesktop.sh && gapgrab	
 
 ~button2
 	DidIClickDesktop.sh && mygtkmenui -- .config/GTKmenu/BspwmDesktopMenui
@@ -249,20 +234,20 @@ super + ctrl + button4
 # spawn programs
 #
 
-# run applications
-super + space
-	. "${HOME}/.cache/wal/colors.sh"; \
-	dmenu_recent -nb "$color0" -nf "$color15" -sb "$color1" -sf "$color15" -fn 'xft:IBM Plex Mono Text:size=12' -i -l 14 -w 600 -y $PANEL_HEIGHT 
 
 # Triggered by jus tapping super 
 super + shift + space
-	rofi -combi-modi drun,window,run -show-icons -font "IBM Plex Sans 12" -display-combi "" -show combi -modi combi
+	rofi -show-icons -font "IBM Plex Sans 12" -show drun 
+
+super + w
+	rofi -show-icons -font "IBM Plex Sans 12" -show window
 
 super + y
-	xdo show -N Polybar
+	hideIt.sh --name '^Polybar tray window$' --toggle
+#	xdo show -N Polybar
 
-super + u
-	xdo hide -N Polybar
+#super + u
+#	xdo hide -N Polybar
 
 super + p
 	bspc desktop -f 1 && $TERMINAL stmx &
@@ -276,7 +261,7 @@ super + {_,shift +}z
     {default-terminal, bspc rule -a \* -o state=floating center=true rectangle=800x600+0+0 && default-terminal}
 	
 super + r
-	rofi-finder.sh
+	rofi -show-icons -font "IBM Plex Sans 12" -show run	
 
 super + shift + b
 	$BROWSER
@@ -343,8 +328,8 @@ super + BackSpace
 
 # Suspend the pc.
 super + shift + y
-	systemctl suspend
+	#betterlockscreen -s dimblur -t "Locked"
 
 # Lock session.
 super + shift + u
-	light-locker-command -l
+	betterlockscreen -l dimblur -t "Locked"	
