@@ -118,6 +118,7 @@ alias emacs="emacs -nw"
 alias neofetch=" neofetch --backend kitty --source ~/Drive/h4pZ/pictures/henrikaau/furor.png --package_managers off --gtk_shorthand off --gtk2 off --gtk3 off --uptime_shorthand tiny --size 270px --memory_display off --config .neofetchrc"
 alias copy='xclip -sel clip'
 alias tock='tock -m -c -s -C=6'
+alias vim='nvim'
 
 # EXPORT SECTION #
 
@@ -126,7 +127,7 @@ export NNN_BMS='w:~/Drive/h4pZ/pictures/wallbase;p:~/Drive/h4pZ/pictures;s:~/Dri
 export NNN_NOTE='~/Drive/h4pZ/notes.txt'
 export NNN_USE_EDITOR=1
 export NNN_PLUG='s:sxiv;c:code'
-export VISUAL=vim               
+export VISUAL=nvim              
 
 # Other exports.
 export CUDA_DIR='/opt/cuda'                    # For JAX.
