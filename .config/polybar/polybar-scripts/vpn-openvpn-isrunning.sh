@@ -3,7 +3,7 @@
 
 if [ "$(pgrep openvpn)" ]; then
    country=$(pvpn --ip | xargs geoiplookup | cut -d ' ' -f 4 | tr -d ',')
-   echo "VPN - $country"
+   echo "vpn - $country"
 else
-    echo "VPN OFF"
+    echo "vpn off"
 fi

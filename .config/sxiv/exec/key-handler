@@ -7,34 +7,34 @@ do
 	"w")
 		cp "$file" ~/.config/wall &&
 		feh --bg-fill "$HOME/.config/wall" &
-		noti -i "$HOME/.config/wall" "Wallpaper changed.";;
+		notify-send.py -i "$HOME/.config/wall" "Wallpaper changed.";;
 	
 	"e")
 		cp "$file" ~/.config/wall &&
 		feh --bg-center "$HOME/.config/wall" &
-		noti -i "$HOME/.config/wall" "Wallpaper changed.";;
+		notify-send.py -i "$HOME/.config/wall" "Wallpaper changed.";;
 	
 	"r")
 		cp "$file" ~/.config/wall &&
 		feh --bg-max "$HOME/.config/wall" &
-		noti -i "$HOME/.config/wall" "Wallpaper changed.";;
+		notify-send.py -i "$HOME/.config/wall" "Wallpaper changed.";;
 	"t")
 		cp "$file" ~/.config/wall &&
 		feh --bg-scale "$HOME/.config/wall" &
-		noti -i "$HOME/.config/wall" "Wallpaper changed.";;
+		notify-send.py -i "$HOME/.config/wall" "Wallpaper changed.";;
 
 	"y")
 		cp "$file" ~/.config/wall &&
 		feh --bg-tile "$HOME/.config/wall" &
-		noti -i "$HOME/.config/wall" "Wallpaper changed.";;
+		notify-send.py -i "$HOME/.config/wall" "Wallpaper changed.";;
 	"C-n")
 		echo -n "$file" | xclip -selection clipboard &&
-		noti -i "$PWD/$file" "$file copied to clipboard";;
+		notify-send.py -i "$PWD/$file" "$file copied to clipboard";;
 
 	"C-c")
 		convert "$file" /tmp/tmp_sxiv_img.png &&
 		xclip -selection clipboard -target image/png /tmp/tmp_sxiv_img.png &&
-		noti -i /tmp/tmp_sxiv_img.png "Image copied to clipboard";;
+		notify-send.py -i /tmp/tmp_sxiv_img.png "Image copied to clipboard";;
 
 
 	"C-d")
@@ -51,7 +51,7 @@ do
 		#bspc config active_border_color "$color2"   &&
 		#bspc config focused_border_color "$color15" &&
 		#bspc config presel_feedback_color "$color1" &&
-		noti -i "$HOME/.config/wall" "Wallpaper and theme changed.";;
+		notify-send.py -i "$HOME/.config/wall" "Wallpaper and theme changed.";;
 
 	esac
 done

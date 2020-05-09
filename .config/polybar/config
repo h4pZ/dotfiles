@@ -131,15 +131,15 @@ label = %title:0:30:...%
 type = internal/xkeyboard
 blacklist-0 = num lock
 
-format-prefix = " "
+;format-prefix = " "
 format-prefix-foreground = ${colors.foreground-alt}
 ;format-prefix-underline = ${colors.secondary}
 
 label-layout = %layout%
 ;label-layout-underline = ${colors.secondary}
 
-label-indicator-padding = 2
-label-indicator-margin = 1
+label-indicator-padding = 0
+label-indicator-margin = 0
 label-indicator-background =
 ;label-indicator-underline = ${colors.secondary}
 
@@ -356,7 +356,7 @@ label = %time% - %date%
 type = internal/pulseaudio
 
 format-volume = <label-volume>
-label-volume = VOL %percentage%%
+label-volume = vol: %percentage%%
 label-volume-foreground = ${root.foreground}
 
 label-muted = "MUTED"
@@ -584,7 +584,7 @@ animation-packetloss-framerate = 500
 type = custom/script
 exec = /home/h4pz/.config/polybar/polybar-scripts/vpn-openvpn-isrunning.sh
 interval = 30
-format-foreground = #ffffff
+format-foreground = #282b33
 
 [module/empty]
 type = custom/script
