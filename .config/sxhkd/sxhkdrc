@@ -243,7 +243,7 @@ super + w
 	rofi -show-icons -font "IBM Plex Sans 12" -show window
 
 super + y
-	hideIt.sh --name '^Polybar tray window$' --toggle
+	kill -s USR1 $(pidof deadd-notification-center)
 #	xdo show -N Polybar
 
 #super + u

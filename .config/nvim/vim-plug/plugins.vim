@@ -16,5 +16,21 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'jiangmiao/auto-pairs'
     " Stable version of coc
     Plug 'neoclide/coc.nvim', {'branch': 'release'}
-
+    " Airline plugin.
+    Plug 'vim-airline/vim-airline'
+    Plug 'vim-airline/vim-airline-themes'
+    " Ranger
+    Plug 'kevinhwang91/rnvimr', {'do': 'make sync'}
+    " FZF
+    Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+    Plug 'junegunn/fzf.vim'
+    Plug 'airblade/vim-rooter'
+    " colorizer
+    Plug 'norcalli/nvim-colorizer.lua'
+    " vim commentary
+    Plug 'tpope/vim-commentary' 
+    " vim-startify
+    Plug 'mhinz/vim-startify'
+    Plug 'justinmk/vim-sneak'
+    Plug 'justinmk/vim-sneak'
 call plug#end()

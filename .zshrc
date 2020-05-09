@@ -119,6 +119,7 @@ alias neofetch=" neofetch --backend kitty --source ~/Drive/h4pZ/pictures/henrika
 alias copy='xclip -sel clip'
 alias tock='tock -m -c -s -C=6'
 alias vim='nvim'
+alias imshow='sxiv -a -b -t ./*'
 
 # EXPORT SECTION #
 
@@ -180,3 +181,8 @@ alias n='n -e'
 # Prompt.
 setopt prompt_subst
 PROMPT="%B%{$fg[cyan]%}%(4~|%-1~/.../%2~|%~)%u%b %{$fg[cyan]%}>%B%{$reset_color%}%b "
+
+
+# FZF
+source /usr/share/fzf/completion.zsh
+source /usr/share/fzf/key-bindings.zsh

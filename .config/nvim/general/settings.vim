@@ -30,7 +30,26 @@ set updatetime=300                      " Faster completion
 set timeoutlen=100                      " By default timeoutlen is 1000 ms
 set formatoptions-=cro                  " Stop newline continution of comments
 set clipboard=unnamedplus               " Copy paste between vim and everything else
+set termguicolors                       " For coc0highlight to work
+
 "set autochdir                           " Your working directory will always be the same as your working directory
 
 au! BufWritePost $MYVIMRC source %      " auto source when writing to init.vm alternatively you can run :source $MYVIMRC
+
+" Dracula
+packadd! dracula_pro
+colorscheme dracula_pro_buffy
+hi Normal guibg=NONE ctermbg=NONE
+hi Pmenu ctermfg=White ctermbg=Black guibg=#463649
+hi PmenuSbar ctermbg=Black
+hi CocErrorSign ctermfg=White
+" set termguicolors
+
+" For vim-commentary
+nnoremap <space>/ :Commentary<CR>
+vnoremap <space>/ :Commentary<CR>
+
+
+" For startify
+let g:startify_session_dir = '~/.config/nvim/session'
 
