@@ -584,7 +584,7 @@ animation-packetloss-framerate = 500
 type = custom/script
 exec = /home/h4pz/.config/polybar/polybar-scripts/vpn-openvpn-isrunning.sh
 interval = 30
-format-foreground = #282b33
+format-foreground = #5f5f87
 
 [module/empty]
 type = custom/script

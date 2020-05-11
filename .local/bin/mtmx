@@ -1,0 +1,8 @@
+#!/bin/zsh
+
+tmux new-session -d -s "main"
+tmux rename-window "main"
+tmux send-keys "tock" C-m
+tmux split-window -h -t main
+tmux send-keys "sudo protonvpn c --cc SE" 
+tmux -2 a -t main
