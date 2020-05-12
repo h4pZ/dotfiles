@@ -6,5 +6,5 @@ tmux send-keys "htop" C-m
 tmux split-window -h -t stats
 tmux send-keys "nvt" C-m
 tmux split-window -v -t stats
-tmux send-keys "s-tui" C-m
+tmux send-keys "conda activate base; s-tui" C-m
 tmux -2 a -t stats
