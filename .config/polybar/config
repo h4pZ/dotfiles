@@ -104,7 +104,7 @@ module-margin-left = 1
 module-margin-right = 1
 
 
-font-0 = "IBM Plex Mono:pixelsize=10:weight=bold;1"
+font-0 = "Cascadia Code:pixelsize=9;1"
 font-1 = "IBM Plex Sans:pixelsize=10:weight=bold;1"
 font-2 = "siji:pixelsize=10:weight=bold;1"
 font-3 = "Arial:pixelsize=10;1"
@@ -179,26 +179,26 @@ label-empty-padding = 1
 ; label-separator =
 
 
-ws-icon-0 = 1;•
-ws-icon-1 = 2;•
-ws-icon-2 = 3;•
-ws-icon-3 = 4;•
-ws-icon-4 = 5;•
-ws-icon-5 = 6;•
-ws-icon-6 = 7;•
-ws-icon-7 = 8;•
-ws-icon-8 = 9;•
-ws-icon-9 = 10;•
-ws-icon-10 = 11;•
-ws-icon-11 = 12;•
-ws-icon-12 = 13;•
-ws-icon-13 = 14;•
-ws-icon-14 = 15;•
-ws-icon-15 = 16;•
-ws-icon-16 = 17;•
-ws-icon-17 = 18;•
-ws-icon-18 = 19;•
-ws-icon-19 = 20;•
+ws-icon-0 = 1;ᚠ
+ws-icon-1 = 2;ᚢ
+ws-icon-2 = 3;ᚦ
+ws-icon-3 = 4;ᚨ
+ws-icon-4 = 5;ᚱ
+ws-icon-5 = 6;ᚲ
+ws-icon-6 = 7;ᚷ
+ws-icon-7 = 8;ᚹ
+ws-icon-8 = 9;ᚻ
+ws-icon-9 = 10;ᚻ
+ws-icon-10 = 11;ᛁ
+ws-icon-11 = 12;ᛃ
+ws-icon-12 = 13;ᛇ
+ws-icon-13 = 14;ᛇ
+ws-icon-14 = 15;ᛉ
+ws-icon-15 = 16;ᛋ
+ws-icon-16 = 17;ᛏ
+ws-icon-17 = 18;ᛒ
+ws-icon-18 = 19;ᛖ
+ws-icon-19 = 20;ᛗ
 
 
 [module/i3]
@@ -360,7 +360,7 @@ label-volume = vol: %percentage%%
 label-volume-foreground = ${root.foreground}
 
 label-muted = "MUTED"
-label-muted-foreground = #666
+label-muted-foreground = #ffffff
 
 bar-volume-width = 10
 bar-volume-foreground-0 = ${colors.primary}
@@ -584,7 +584,7 @@ animation-packetloss-framerate = 500
 type = custom/script
 exec = /home/h4pz/.config/polybar/polybar-scripts/vpn-openvpn-isrunning.sh
 interval = 30
-format-foreground = #272934
+format-foreground = #a32a34
 
 [module/empty]
 type = custom/script

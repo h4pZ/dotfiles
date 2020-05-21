@@ -88,6 +88,7 @@ bspc rule -a Steam state=floating
 bspc rule -a Sxiv state=floating center=true 
 bspc rule -a vlc state=floating center=true rectangle=1400x800+0+0
 bspc rule -a Zathura state=floating center=true rectangle=1400x800+0+0
+bspc rule -a "Blizzard Battle.net" state=floating center=true
 #bspc rule -a firefox desktop=I
 #bspc rule -a calibre desktop=II
 #bspc rule -a geany desktop=II
