@@ -29,7 +29,7 @@
 ;secondary = #997A96
 alert = #C57D85
 
-background = #800c0f14
+background = #A6000000
 background-alt = ${xrdb:color0:#222}
 foreground = #ffffff
 foreground-alt = ${xrdb:color7:#222}

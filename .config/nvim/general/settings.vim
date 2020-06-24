@@ -43,10 +43,9 @@ au! BufWritePost $MYVIMRC source %      " auto source when writing to init.vm al
 packadd! dracula_pro
 colorscheme dracula_pro_buffy
 hi Normal guibg=NONE ctermbg=NONE
-hi Pmenu ctermfg=White ctermbg=Black guibg=#463649
+hi Pmenu ctermfg=Red ctermbg=Black guibg=#463649
 hi PmenuSbar ctermbg=Black
-hi CocErrorSign ctermfg=White
-" set termguicolors
+hi CocErrorSign ctermfg=Red
 
 " For vim-commentary
 nnoremap <space>/ :Commentary<CR>

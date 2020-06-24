@@ -33,4 +33,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'mhinz/vim-startify'
     Plug 'justinmk/vim-sneak'
     Plug 'justinmk/vim-sneak'
-call plug#end()
+    " nnn
+    Plug 'mcchrish/nnn.vim'
+
+    call plug#end()

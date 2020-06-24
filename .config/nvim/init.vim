@@ -6,4 +6,4 @@ source $HOME/.config/nvim/themes/airline.vim
 source $HOME/.config/nvim/plug-config/rnvimr.vim
 source $HOME/.config/nvim/plug-config/fzf.vim
 source $HOME/.config/nvim/plug-config/sneak.vim
-
+source $HOME/.config/nvim/plug-config/nnn.vim
