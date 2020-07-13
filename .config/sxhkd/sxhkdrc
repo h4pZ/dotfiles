@@ -237,7 +237,7 @@ super + ctrl + button4
 
 # Triggered by jus tapping super 
 super + shift + space
-	rofi -show-icons -font "IBM Plex Sans 12" -show drun 
+	rofi -show-icons -show drun 
 
 super + w
 	rofi -show-icons -font "IBM Plex Sans 12" -show window

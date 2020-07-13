@@ -1,9 +1,9 @@
 * {
-    active-background: #75748E;
+    active-background: #75708B;
     active-foreground: @foreground;
     normal-background: @background;
     normal-foreground: @foreground;
-    urgent-background: #30538B;
+    urgent-background: #8F6C6F;
     urgent-foreground: @foreground;
 
     alternate-active-background: @background;
@@ -13,23 +13,23 @@
     alternate-urgent-background: @background;
     alternate-urgent-foreground: @foreground;
 
-    selected-active-background: #30538B;
+    selected-active-background: #8F6C6F;
     selected-active-foreground: @foreground;
-    selected-normal-background: #75748E;
+    selected-normal-background: #75708B;
     selected-normal-foreground: @foreground;
-    selected-urgent-background: #667099;
+    selected-urgent-background: #8A798A;
     selected-urgent-foreground: @foreground;
 
     background-color: @background;
-    background: transparent;
-    foreground: #bdbecd;
-    border-color: @foreground;
+    background: #15161a;
+    foreground: #c5bdc7;
+    border-color: #8f6c6f;
     spacing: 2;
 }
 
 #window {
-	background-color: #080D18CC;
-    border: 0;
+    background-color: #15161a;
+    border: 2;
     padding: 2.5ch;
 	border-radius: 10px;
 	transparency: "real";
@@ -50,7 +50,6 @@
 
 #textbox {
     text-color: @foreground;
-	font: "IBM Plex Mono";
 }
 
 #inputbar {
@@ -65,11 +64,11 @@
 }
 
 #listview {
-	dynamic: true;
+    fixed-height: 0;
     border: 2px 0px 0px;
-    border-color: @border-color;
+    border-color: @background;
     spacing: 2px;
-    scrollbar: true;
+    scrollbar: false;
     padding: 2px 0px 0px;
 	background-color: @background;
 	transparency: "real";
@@ -126,9 +125,9 @@
 }
 
 #scrollbar {
-    width: 0px;
+    width: 4px;
     border: 0;
-    handle-width: 4px;
+    handle-width: 8px;
     padding: 2;
 	background-color: transparent;
 	handle-color: @foreground;
