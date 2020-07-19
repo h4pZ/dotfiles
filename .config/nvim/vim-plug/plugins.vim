@@ -35,5 +35,12 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'justinmk/vim-sneak'
     " nnn
     Plug 'mcchrish/nnn.vim'
+    Plug 'unblevable/quick-scope'
+    Plug 'voldikss/vim-floaterm'
+    Plug 'liuchengxu/vim-which-key'
+    Plug 'mhinz/vim-signify'
+    Plug 'tpope/vim-fugitive'
+    Plug 'tpope/vim-rhubarb'
+    Plug 'junegunn/gv.vim'
 
     call plug#end()

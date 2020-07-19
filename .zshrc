@@ -120,6 +120,7 @@ alias copy='xclip -sel clip'
 alias tock='tock -m -c -s -C=6'
 alias vim='nvim'
 alias imshow='sxiv -a -b -t ./*'
+alias lg='lazygit'
 
 # EXPORT SECTION #
 
@@ -127,7 +128,7 @@ alias imshow='sxiv -a -b -t ./*'
 export NNN_BMS='w:~/Drive/h4pZ/pictures/wallbase;p:~/Drive/h4pZ/pictures;s:~/Drive/h4pZ/universities/master/semesters/;C:~/Drive/h4pZ/code/;b:~/Drive/h4pZ/books/;d:~/Drive/h4pZ/;c:~/.config/'
 export NNN_NOTE='~/Drive/h4pZ/notes.txt'
 export NNN_USE_EDITOR=1
-export NNN_PLUG='s:sxiv;c:code;z:zathura;v:vlc'
+export NNN_PLUG='s:sxiv;c:code;z:zathura;v:vlc;g:_lazygit'
 export VISUAL=nvim              
 
 # Other exports.
