@@ -121,6 +121,7 @@ alias tock='tock -m -c -s -C=6'
 alias vim='nvim'
 alias imshow='sxiv -a -b -t ./*'
 alias lg='lazygit'
+alias cpwd='pwd | copy'
 
 # EXPORT SECTION #
 
