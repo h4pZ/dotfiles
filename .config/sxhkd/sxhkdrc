@@ -289,13 +289,13 @@ ctrl + shift + Print
 #
 
 XF86AudioRaiseVolume
-	volume up
+	vol.sh inc
 
 XF86AudioLowerVolume
-	volume down
+	vol.sh dec
 
 XF86AudioMute
-	volume mute
+	vol.sh mute
 	
 XF86MonBrightnessDown
  light -U 5 

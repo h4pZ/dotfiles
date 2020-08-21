@@ -42,5 +42,6 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'tpope/vim-fugitive'
     Plug 'tpope/vim-rhubarb'
     Plug 'junegunn/gv.vim'
-
+    Plug 'jpalardy/vim-slime'
+    Plug 'JuliaEditorSupport/julia-vim'
     call plug#end()

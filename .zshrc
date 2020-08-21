@@ -182,7 +182,7 @@ alias n='n -e'
 
 # Prompt.
 setopt prompt_subst
-PROMPT="%B%{$fg[cyan]%}%(4~|%-1~/.../%2~|%~)%u%b %{$fg[cyan]%}>%B%{$reset_color%}%b "
+PROMPT="λ %B%{$fg[cyan]%}%(4~|%-1~/.../%2~|%~)%u%b %{$fg[cyan]%}>%B%{$reset_color%}%b "
 
 
 # FZF
