@@ -130,6 +130,7 @@ export NNN_BMS='w:~/Drive/h4pZ/pictures/wallbase;p:~/Drive/h4pZ/pictures;s:~/Dri
 export NNN_NOTE='~/Drive/h4pZ/notes.txt'
 export NNN_USE_EDITOR=1
 export NNN_PLUG='s:sxiv;c:code;z:zathura;v:vlc;g:_lazygit'
+export NNN_COLORS='1234'
 export VISUAL=nvim              
 
 # Other exports.
@@ -170,7 +171,7 @@ n()
 {
     export NNN_TMPFILE=${XDG_CONFIG_HOME:-$HOME/.config}/nnn/.lastd
 
-    nnn -e "$@"
+    nnn -e -C "$@"
 
     if [ -f $NNN_TMPFILE ]; then
             . $NNN_TMPFILE
