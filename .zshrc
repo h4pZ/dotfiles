@@ -126,7 +126,7 @@ alias cpwd='pwd | copy'
 # EXPORT SECTION #
 
 # Setting up the nnn options.
-export NNN_BMS='w:~/Drive/h4pZ/pictures/wallbase;p:~/Drive/h4pZ/pictures;s:~/Drive/h4pZ/universities/master/semesters/;C:~/Drive/h4pZ/code/;b:~/Drive/h4pZ/books/;d:~/Drive/h4pZ/;c:~/.config/'
+export NNN_BMS='w:~/Drive/h4pZ/pictures/wallbase;p:~/Drive/h4pZ/pictures;s:~/Drive/h4pZ/universities/master/semesters/;C:~/Drive/h4pZ/code/;b:~/Drive/h4pZ/books/;d:~/Drive/h4pZ/;c:~/.config/;o:/home/h4pz/Drive/h4pZ/personal/jobs/ocox-EB'
 export NNN_NOTE='~/Drive/h4pZ/notes.txt'
 export NNN_USE_EDITOR=1
 export NNN_PLUG='s:sxiv;c:code;z:zathura;v:vlc;g:_lazygit'

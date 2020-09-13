@@ -15,8 +15,7 @@ if [[ $(echo $GRAPHIC_CARD | grep -i 'intel\|lenovo') != "" ]]; then MCODE='init
   grep -q 'vsync = "opengl-swc";' ~/.config/compton.conf || echo 'vsync = "opengl-swc";' >> ~/.config/compton.conf
 fi
 ## Reduces flicker. Disabling saves resources.
-#picom --experimental-backends -b &
-picom -b &
+#picom -b &
 ## enable local fonts in .fonts directory
 xset +fp /usr/share/fonts/local &
 xset +fp /usr/share/fonts/misc &
@@ -47,4 +46,5 @@ gnome-keyring-daemon &
 thunar --daemon &
 deadd-notification-center &
 ## Welcome message
+picom --experimental-backends -b &
 sleep 1 && notify-send "Welcome to Manjaro-bspwm! " "Press super + F1 to show keybindings" &

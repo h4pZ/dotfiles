@@ -1,5 +1,5 @@
 #Refresh rate of the visualizers. A really high refresh rate may cause screen tearing. Default is 20.
-visualizer.fps=120
+visualizer.fps=60
 
 #Defaults to "/tmp/mpd.fifo"
 mpd.fifo.path
@@ -27,7 +27,6 @@ visualizers=spectrum,lorenz,ellipse
 
 #Configures what character the spectrum visualizer will use. Specifying a space (e.g " ") means the
 #background will be colored instead of the character. Defaults to " ".
-visualizer.spectrum.character=.
 
 #Spectrum bar width. Defaults to 1.
 visualizer.spectrum.bar.width=1
@@ -73,8 +72,9 @@ audio.sources=pulse
 
 #Configures what character the ellipse visualizer will use. Specifying a space (e.g " ") means the
 #background will be colored instead of the character. Defaults to " ".
-visualizer.ellipse.character=.
-visualizer.lorenz.character=.
+visualizer.ellipse.character=■
+visualizer.lorenz.character=■
+visualizer.spectrum.character=■
 #The radius of each color ring in the ellipse visualizer. Defaults to 2.
 #visualizer.ellipse.radius=2
 
