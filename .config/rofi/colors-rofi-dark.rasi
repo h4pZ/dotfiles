@@ -29,7 +29,7 @@
 
 #window {
     background-color: #15161a;
-    border: 3;
+    border: 0;
     padding: 2.5ch;
 	border-radius: 10px;
 	transparency: "real";
@@ -77,6 +77,7 @@
 #element {
     border: 0;
     padding: 1px;
+	border-radius: 2px;
 }
 
 #element.normal.normal {
@@ -95,18 +96,18 @@
 }
 
 #element.selected.normal {
-    background-color: @selected-normal-background;
-    text-color: @selected-normal-foreground;
+    background-color: @selected-normal-foreground;
+    text-color: @selected-normal-background;
 }
 
 #element.selected.urgent {
-    background-color: @selected-urgent-background;
-    text-color: @selected-urgent-foreground;
+    background-color: @selected-urgent-foreground;
+    text-color: @selected-urgent-background;
 }
 
 #element.selected.active {
-    background-color: @selected-active-background;
-    text-color: @selected-active-foreground;
+    background-color: @selected-active-foreground;
+    text-color: @selected-active-background;
 }
 
 #element.alternate.normal {
@@ -143,8 +144,8 @@
 }
 
 #button.selected {
-    background-color: @selected-normal-background;
-    text-color: @selected-normal-foreground;
+    background-color: @selected-normal-foreground;
+    text-color: @selected-normal-background;
 }
 
 #inputbar {
@@ -167,5 +168,12 @@
     spacing: 0;
     text-color: @normal-foreground;
 }
+
+ textbox-prompt-colon {                                                
+     text-color: inherit;                                              
+     expand: false;                                                    
+     margin: 0 0.3em 0em 0em;                                          
+     str: "";
+ }    
 
 /* vim:ft=css

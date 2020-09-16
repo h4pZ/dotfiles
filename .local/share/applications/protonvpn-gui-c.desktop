@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=ProtonVPN Connect
+Exec=small_term sudo protonvpn c
+Icon=/usr/lib/python3.8/site-packages//linux_gui/resources/img/logo/protonvpn_logo.png
+Type=Application
+Terminal=False
+Categories=Utility;GUI;Network;VPN

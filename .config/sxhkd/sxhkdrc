@@ -69,6 +69,11 @@ ctrl + space + super
 alt + super + {h,j,k,l}
 	bspc node -p \~{west,south,north,east}
 
+# Change keyboard layout
+ctrl + shift + {1, 2, 3}
+    setxkbmap -model pc105 -layout {us, es, se}; \
+    notify-send.py $(setxkbmap -query | grep layout) --replaces-process "keyboard_layout" --hint string:image-path:keyboard
+
 # Presel the desktop for splitting in certain direction
 # alt + shift + {a,s,w,d}
 	# bspc node @/ -p \~{west,south,north,east}
@@ -237,7 +242,7 @@ super + ctrl + button4
 
 # Triggered by jus tapping super 
 super + shift + space
-	rofi -show-icons -show drun 
+	rofi -show drun -display-drun "launch"
 
 super + w
 	rofi -show-icons -font "IBM Plex Sans 12" -show window

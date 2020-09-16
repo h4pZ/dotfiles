@@ -38,6 +38,4 @@ unset TERMCAP
 # Man is much better than us at figuring this out
 unset MANPATH
 
-setxkbmap -model pc105 -layout us,es,se -option grp:ctrl_alt_toggle
-
 export PATH="$HOME/.cargo/bin:$PATH"

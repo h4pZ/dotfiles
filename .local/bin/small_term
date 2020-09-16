@@ -1,0 +1,1 @@
+bspc rule -a \* -o state=floating center=true rectangle=800x600+0+0 && $TERMINAL $@ 
