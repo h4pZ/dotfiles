@@ -7,34 +7,36 @@ do
 	"w")
 		cp "$file" ~/.config/wall &&
 		feh --bg-fill "$HOME/.config/wall" &
-		notify-send.py -i "$HOME/.config/wall" "Wallpaper changed.";;
+		notify-send.py "Wallpaper changed" "$PWD/$file" --replaces-process "change_wallpaper" --hint string:image-path:file://$HOME/.config/wall;;
 	
 	"e")
 		cp "$file" ~/.config/wall &&
 		feh --bg-center "$HOME/.config/wall" &
-		notify-send.py -i "$HOME/.config/wall" "Wallpaper changed.";;
+		notify-send.py "Wallpaper changed" "$PWD/$file" --replaces-process "change_wallpaper" --hint string:image-path:file://$HOME/.config/wall;;
 	
 	"r")
 		cp "$file" ~/.config/wall &&
 		feh --bg-max "$HOME/.config/wall" &
-		notify-send.py -i "$HOME/.config/wall" "Wallpaper changed.";;
+		notify-send.py "Wallpaper changed" "$PWD/$file" --replaces-process "change_wallpaper" --hint string:image-path:file://$HOME/.config/wall;;
+
 	"t")
 		cp "$file" ~/.config/wall &&
 		feh --bg-scale "$HOME/.config/wall" &
-		notify-send.py -i "$HOME/.config/wall" "Wallpaper changed.";;
+		notify-send.py "Wallpaper changed" "$PWD/$file" --replaces-process "change_wallpaper" --hint string:image-path:file://$HOME/.config/wall;;
 
 	"y")
 		cp "$file" ~/.config/wall &&
 		feh --bg-tile "$HOME/.config/wall" &
-		notify-send.py -i "$HOME/.config/wall" "Wallpaper changed.";;
+		notify-send.py "Wallpaper changed" "$PWD/$file" --replaces-process "change_wallpaper" --hint string:image-path:file://$HOME/.config/wall;;
+
 	"C-n")
 		echo -n "$file" | xclip -selection clipboard &&
-		notify-send.py -i "$PWD/$file" "$file copied to clipboard";;
+		notify-send.py "Image copied to clipboard" "$PWD/$file" --replaces-process "copy_wallpaper" --hint string:image-path:file://$PWD/$file;;
 
 	"C-c")
 		convert "$file" /tmp/tmp_sxiv_img.png &&
 		xclip -selection clipboard -target image/png /tmp/tmp_sxiv_img.png &&
-		notify-send.py -i /tmp/tmp_sxiv_img.png "Image copied to clipboard";;
+		notify-send.py "Image copied to clipboard" "$PWD/$file" --replaces-process "copy_wallpaper" --hint string:image-path:file://$PWD/$file;;
 
 
 	"C-d")

@@ -39,11 +39,11 @@ secondary = ${xrdb:color2:#222}
 
 [bar/HDMI-0-solid]
 monitor = ${env:MONITOR:HDMI-0}
-width = 100%
+width = 13%
 height = 30
-offset-x = 0.0%
-offset-y = 0%
-radius = 0.0
+offset-x = 1%
+offset-y = 1%
+radius = 5.0
 fixed-center = true
 bottom = true
 
@@ -80,11 +80,11 @@ cursor-scroll = ns-resize
 
 [bar/HDMI-1-solid]
 monitor = ${env:MONITOR:HDMI-1}
-width = 100%
+width = 13%
 height = 30
-offset-x = 0%
-offset-y = 0%
-radius = 0.0
+offset-x = 1%
+offset-y = 1%
+radius = 5.0
 fixed-center = true
 bottom = true 
 
@@ -112,7 +112,7 @@ font-4 = "Noto Sans CJK TC:pixelsize=10:weight=bold;1"
 font-5 = "BABEL Unicode:pixelsize=10:weight=bold;1"
 font-6 = "Symbol:pixelsize=10;1"
 
-modules-left = vpn-openvpn-isrunning 
+modules-left = 
 modules-center = bspwm
 modules-right =
 
