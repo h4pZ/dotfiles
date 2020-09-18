@@ -1,13 +1,4 @@
-﻿# bspwm hotkeys
-#
-# Cleanly quit bspwm
-#super + shift + q
-#	bspc quit 1 && pkill lemonpanel && pkill lemonbar
-
-# Show keybindings
-#super + shift + a
-#	$TERMINAL -e keybindings.sh
-#
+﻿#
 # Window manipulation
 # ______________
 
@@ -24,20 +15,11 @@ super + shift + x
 #	bspc node -t {pseudo_tiled,tiled}
 super + f
 	{bspc node -t floating && window-placer $(bspc query -T -d | grep -o '"state":"floating"' | wc -l),bspc node -t tiled}
-# Force all windows of the desktop to tile
-#super + ctrl + t
-#	bspcp tile
-# Force all windows of the desktop to float and arrange them
-#super + ctrl + shift + t
-#	bspcp float
 	
 # Toggle fullscreen
 super + shift + f 
 	bspc node -t {fullscreen,tiled}	
 
-# Try to keep size and position of the selected window
-#super + o
-#	bspc node -g private
 
 # Make window sticky
 super + s
@@ -74,57 +56,17 @@ ctrl + shift + {1, 2, 3}
     setxkbmap -model pc105 -layout {us, es, se}; \
     notify-send.py $(setxkbmap -query | grep layout) --replaces-process "keyboard_layout" --hint string:image-path:keyboard
 
-# Presel the desktop for splitting in certain direction
-# alt + shift + {a,s,w,d}
-	# bspc node @/ -p \~{west,south,north,east}
-# 
-# alt + shift + {h,j,k,l}
-	# bspc node @/ -p \~{west,south,north,east}
-
-# alt + shift + {Left,Down,Up,Right}
-	# bspc node @/ -p \~{west,south,north,east}
-# Set splitting ratio of windows
-#alt + ctrl + {1-9}
-#	bspc node -o 0.{1-9}
 		
 # Move current window to largest space or preselected area if there is one.
 super + Return
     windowpromoter
 
-# Create a new "master area", splitting the whole desktop instead of just windows.
-#alt + Return
-#	bspc node -n @/
-	
 # go (Shift=move) to desktop (and focus the monitor that the desktop is located on. Bspwm style)
 super + {_,shift + }{1-9,0}
     bspc {desktop -f,node -d} ^{1-9,10}
 
 super  + {_, shift +}{q,w,e,r,t,y,u,i,o,p}
     bspc {desktop -f,node -d} ^{11,12,13,14,15,16,17,18,19,20}
-## Alternative: i3 style behavior (focus nth, desktop of the focused monitor)
-#super + {1-9,0}
-#	focusdesktopofthismonitor {1-9}
-#super + shift + {1-9,0}
-#	movetodesktopofthismonitor {1-9,10}
-
-## Another alternative: xmonad style desktops. You have 10 desktops shared between all monitors,
-## and focusing a desktop focuses it on the currently focused monitor
-#super + {1-9,0}
-#	summondesktop.sh {1-9,10}
-#super + shift + {1-9,0}
-#	bspc node -d ^{1-9,10}
-
-# Select previous / next desktop
-#super + {m,n}
-#	bspc desktop -f {prev.occupied,next.occupied} 
-
-# cycle windows
-#alt + {_,shift + }Tab
-#    bspc node -f {next,prev}
-
-# Go to specific window
-#super + Tab
-#	WindowSelector
 	
 #Focus windows by direction, works with multihead
 super +  {h,j,k,l}
@@ -154,9 +96,6 @@ super + ctrl + {Left,Down,Up,Right}
 # Layout manipulation/desktop level controls
 # ______________    
 
-# Toggle monocle mode
-#super + f 
-#	bspc desktop -l next
 	
 # Balance tree
 super + b
@@ -170,9 +109,6 @@ super + alt + b
 super + ctrl + b
 	bspc node @/ -E
 
-# Toggle automatic balancing of windows
-#alt + b
-#	euclid_balancer
 
 # Mirror and flip leaves of tree
 super + {comma,period}
@@ -182,58 +118,6 @@ super + {comma,period}
 super + shift + {comma,period}
 	bspc node @/ -R {90,270}
 
-# Change window gap
-#super + g
-#	bspc config -d focused window_gap {$gap,$(($gap+$gap)),$(($gap+$gap+$gap))}
-
-#super + button{4,5}
-#	bspc config -d focused window_gap $((`bspc config -d focused window_gap` {+,-} 2 ))
-#
-# mouse bindings
-# __________________
-
-#~button1
-#	DidIClickDesktop.sh && gapgrab	
-
-#~button2
-#	DidIClickDesktop.sh && mygtkmenui -- .config/GTKmenu/BspwmDesktopMenui
-#DidIClickDesktop.sh && mygtkmenui -- .config/GTKmenu/BspwmWindowMenui
-		
-#~button3
-#	DidIClickDesktop.sh && mygtkmenui -- .config/GTKmenu/LaunchMenu
-
-# Switch workspace by scrolling on the desktop. Causes scrolling issues on some systems.
-#~button4
-#	DidIClickDesktop.sh && bspc desktop -f next
-#~button5
-#	DidIClickDesktop.sh && bspc desktop -f prev
-	
-### Add or remove desktops by scrolling
-#super + ctrl + button5
-#    bspcp dsktp rm
-
-#super + ctrl + button4
-#    bspcp dsktp add
-
-# Spawn applications popup menu and manually tile selected 
-# app where your mouse was when you opened the menu. Smartsplit only chooses
-# biggest dimension of the window, MouseLaunch only cares which edge is closer.
-# mod5 is alt_gr (first key right from space) on most keyboards. 
-#mod5 + @button1
-#    MouseLaunch ; mygtkmenui -- .config/GTKmenu/LaunchMenu
-#	smartsplit ; dboxmenu
-
-# Spawn window manipulation menu
-# Mod1 is alt
-#    BspwmWindowMenu
-#mod1 + @button1
-#    mygtkmenui -- .config/GTKmenu/BspwmWindowMenui
-
-
-#
-# Touchpad "gestures" (depend on your touchpad driver, very likely to be unavailable)
-#_____________________
-    
 #
 # spawn programs
 #
@@ -253,35 +137,17 @@ super + m
 super + shift + m
     xdo hide -N Polybar && bspc config bottom_padding 10
 
-#super + p
-#	bspc desktop -f 1 && $TERMINAL stmx &
-
-#super + shift + p 
-#	bspc desktop -f 11 && $TERMINAL mtmx &
 
 #super + shift + Return
 #	default-terminal
 super + {_,shift +}z
     {default-terminal, bspc rule -a \* -o state=floating center=true rectangle=800x600+0+0 && default-terminal}
 	
-#super + e
-#	nautilus
 
-# Use slightly bigger font for ranger
-#super + shift + e
-#	default-terminal ranger
-
+# Screenshot
 Print
 	flameshot gui
 	
-# start/stop a gif recording of a selection
-#ctrl + Print
-#  { giph -s -l -c 0.3\,0\,0.5\,0.3 ~/Videos/$(date +%s).gif, killall -INT -g giph }
-
-# start/stop a gif recording of a selection, upload to 0x0.st and copy url to clipboard
-#ctrl + shift + Print
-#  { giph -s -l -c 0.3\,0\,0.5\,0.3 | (trap '' INT; curl -F "file=@-" 0x0.st | xclip -selection clipboard), killall -INT -g giph }
-
 #
 # Media keys
 #
@@ -308,21 +174,6 @@ XF86Sleep
 # make sxhkd reload its configuration files:
 super + shift + Escape
 	pkill -USR1 -x sxhkd
-
-# In case bspwmrc fails to execute/you wish have plugged in a new monitor
-#super + shift + r
-#	bspwmrc
-#edit this file
-#alt + ctrl + space
-#	$GUI_EDITOR ~/.config/sxhkd/sxhkdrc
-# Toggle compositing
-#super + ctrl + space
-#	{pkill compton ,\
-#	compton -b }
-
-# Remove receptacles
-#super + BackSpace
-#  for i in $(bspc query -N -n .leaf.!window.local); do bspc node $i -k; done
 
 # Lock session.
 super + shift + b
