@@ -41,7 +41,8 @@ au! BufWritePost $MYVIMRC source %      " auto source when writing to init.vm al
 
 " Dracula
 packadd! dracula_pro
-colorscheme dracula_pro_buffy
+"colorscheme dracula_pro_buffy
+colorscheme bliss
 hi Normal guibg=NONE ctermbg=NONE
 hi Pmenu ctermfg=Red ctermbg=Black guibg=#463649
 hi PmenuSbar ctermbg=Black
