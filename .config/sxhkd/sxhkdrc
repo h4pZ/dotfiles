@@ -178,3 +178,7 @@ super + shift + Escape
 # Lock session.
 super + shift + b
 	betterlockscreen -l dimblur -t "Locked"	
+
+# File explorer.
+super + v
+    nautilus
