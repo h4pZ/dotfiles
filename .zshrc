@@ -123,6 +123,7 @@ alias vim='nvim'
 alias imshow='sxiv -a -b -t ./*'
 alias lg='lazygit'
 alias cpwd='pwd | copy'
+alias screenkey='screenkey --scr 1 -s small -f "IBM Plex Mono" --opacity 0.5'
 
 # EXPORT SECTION #
 
