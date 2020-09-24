@@ -132,7 +132,7 @@ super + n
 #	xdo show -N Polybar
 
 super + m
-	xdo show -N Polybar && bspc config bottom_padding 40
+	xdo show -N Polybar && bspc config bottom_padding 50
 
 super + shift + m
     xdo hide -N Polybar && bspc config bottom_padding 10

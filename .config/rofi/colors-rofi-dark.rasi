@@ -21,14 +21,14 @@
     selected-urgent-foreground: @foreground;
 
     background-color: @background;
-    background: #15161a;
+    background: #86676f;
     foreground: #ffffff;
-    border-color: #80a1c0;
+    border-color: #81a1c1;
     spacing: 9;
 }
 
 #window {
-    background-color: #15161a;
+    background-color: #86676f;
     border: 0;
     padding: 2.5ch;
 	border-radius: 10px;

@@ -108,6 +108,7 @@ alias free='free -m'                                            # Show sizes in 
 #alias sxiv='sxiv -b -a'
 alias lsa="exa -la"
 alias ls="exa -l"
+alias cat="bat"
 alias astmx="tmux a -t stats"
 alias amtmx="tmux a -t main"
 alias tkill="tmux kill-server"
