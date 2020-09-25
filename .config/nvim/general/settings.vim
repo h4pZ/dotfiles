@@ -48,7 +48,7 @@ hi Normal guibg=#171717
 hi Pmenu guibg=#1c1b1d
 "hi Pmenu ctermfg=Red ctermbg=Black guibg=#463649
 "hi PmenuSbar ctermbg=Black
-"hi CocErrorSign ctermfg=Red
+hi CocErrorSign guifg=#DE9DAC
 
 " For vim-commentary
 nnoremap <space>/ :Commentary<CR>
