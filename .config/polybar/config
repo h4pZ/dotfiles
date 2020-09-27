@@ -30,7 +30,7 @@
 alert = #C57D85
 
 ;background = #151517
-background = #171717
+background = #00171717
 background-alt = ${xrdb:color0:#222}
 foreground = #ffffff
 foreground-alt = ${xrdb:color7:#222}
@@ -42,7 +42,7 @@ secondary = ${xrdb:color2:#222}
 monitor = ${env:MONITOR:HDMI-0}
 width = 16%
 height = 30
-offset-x = 1%
+offset-x = 42%
 offset-y = 1%
 radius = 0
 fixed-center = true
@@ -83,7 +83,7 @@ cursor-scroll = ns-resize
 monitor = ${env:MONITOR:HDMI-1}
 width = 16%
 height = 30
-offset-x = 1%
+offset-x = 42%
 offset-y = 1%
 radius = 0
 fixed-center = true
