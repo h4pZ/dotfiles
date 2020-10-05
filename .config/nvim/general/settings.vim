@@ -57,3 +57,8 @@ vnoremap <space>/ :Commentary<CR>
 
 " For startify
 let g:startify_session_dir = '~/.config/nvim/session'
+
+noremap <Leader>y "*y
+noremap <Leader>p "*p
+noremap <Leader>Y "+y
+noremap <Leader>P "+p

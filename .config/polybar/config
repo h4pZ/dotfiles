@@ -40,9 +40,9 @@ secondary = ${xrdb:color2:#222}
 
 [bar/HDMI-0-solid]
 monitor = ${env:MONITOR:HDMI-0}
-width = 16%
+width = 20%
 height = 30
-offset-x = 42%
+offset-x = 40%
 offset-y = 1%
 radius = 0
 fixed-center = true
@@ -63,7 +63,7 @@ padding-right = 3
 module-margin-left = 1
 module-margin-right = 1
 
-font-0 = "pashufont:pixelsize=15;3"
+font-0 = "Nihon Rustica Thin:pixelsize=18:weight=bold;3"
 font-1 = "IBM Plex Sans:pixelsize=10:weight=bold;1"
 font-2 = "siji:pixelsize=10:weight=bold;1"
 font-3 = "Arial:pixelsize=10;1"
@@ -81,9 +81,9 @@ cursor-scroll = ns-resize
 
 [bar/HDMI-1-solid]
 monitor = ${env:MONITOR:HDMI-1}
-width = 16%
+width = 20%
 height = 30
-offset-x = 42%
+offset-x = 40%
 offset-y = 1%
 radius = 0
 fixed-center = true
@@ -105,7 +105,7 @@ module-margin-left = 1
 module-margin-right = 1
 
 
-font-0 = "pashufont:pixelsize=15;3"
+font-0 = "Nihon Rustica Thin:pixelsize=18:weight=bold;3"
 font-1 = "IBM Plex Sans:pixelsize=10:weight=bold;1"
 font-2 = "siji:pixelsize=10:weight=bold;1"
 font-3 = "Arial:pixelsize=10;1"
@@ -160,45 +160,45 @@ type = internal/bspwm
 label-focused = %icon%
 label-focused-foreground = #c83844
 ;label-focused-underline= #db2760
-label-focused-padding = 0
+label-focused-padding = 1
 
 label-occupied = %icon%
-label-occupied-padding = 0
+label-occupied-padding = 1
 label-occupied-foreground = #FFFFFF
 
 label-urgent = %icon%!
 ;label-urgent-background = #db2760
 label-urgent-foreground = ${colors.primary}
-label-urgent-padding = 0
+label-urgent-padding = 1
 
 label-empty = %icon%
 label-empty-foreground = #4dffffff
-label-empty-padding = 0
+label-empty-padding = 1
 
 ; Separator in between workspaces
-label-separator = " "
+label-separator = 
 
 
-ws-icon-0 = 1;A
-ws-icon-1 = 2;B
-ws-icon-2 = 3;C
-ws-icon-3 = 4;D
-ws-icon-4 = 5;E
-ws-icon-5 = 6;F
-ws-icon-6 = 7;G
-ws-icon-7 = 8;H
-ws-icon-8 = 9;I
-ws-icon-9 = 10;J
-ws-icon-10 = 11;V
-ws-icon-11 = 12;W
-ws-icon-12 = 13;M
-ws-icon-13 = 14;X
-ws-icon-14 = 15;Y
-ws-icon-15 = 16;P
-ws-icon-16 = 17;Z
-ws-icon-17 = 18;R
-ws-icon-18 = 19;S
-ws-icon-19 = 20;T
+ws-icon-0 = 1;ab
+ws-icon-1 = 2;cd
+ws-icon-2 = 3;fg
+ws-icon-3 = 4;hi
+ws-icon-4 = 5;jk
+ws-icon-5 = 6;az
+ws-icon-6 = 7;no
+ws-icon-7 = 8;pq
+ws-icon-8 = 9;rs
+ws-icon-9 = 10;tu
+ws-icon-10 = 11;ba
+ws-icon-11 = 12;cd
+ws-icon-12 = 13;gf
+ws-icon-13 = 14;ih
+ws-icon-14 = 15;kj
+ws-icon-15 = 16;za
+ws-icon-16 = 17;on
+ws-icon-17 = 18;qp
+ws-icon-18 = 19;rs
+ws-icon-19 = 20;ut
 
 
 [module/i3]
