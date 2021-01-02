@@ -17,7 +17,6 @@
 ;==========================================================
 
 
-. "${HOME}/.cache/wal/colors.sh"
 
 
 [colors]
@@ -63,7 +62,7 @@ padding-right = 3
 module-margin-left = 1
 module-margin-right = 1
 
-font-0 = "Nihon Rustica Thin:pixelsize=18:weight=bold;3"
+font-0 = "Nihon Rustica:pixelsize=18;3"
 font-1 = "IBM Plex Sans:pixelsize=10:weight=bold;1"
 font-2 = "siji:pixelsize=10:weight=bold;1"
 font-3 = "Arial:pixelsize=10;1"
@@ -105,7 +104,7 @@ module-margin-left = 1
 module-margin-right = 1
 
 
-font-0 = "Nihon Rustica Thin:pixelsize=18:weight=bold;3"
+font-0 = "Nihon Rustica:pixelsize=18;3"
 font-1 = "IBM Plex Sans:pixelsize=10:weight=bold;1"
 font-2 = "siji:pixelsize=10:weight=bold;1"
 font-3 = "Arial:pixelsize=10;1"

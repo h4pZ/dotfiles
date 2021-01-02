@@ -2,7 +2,6 @@
 
 # Terminate already running bar instances
 killall -q polybar
-xrdb ~/.cache/wal/colors.Xresources
 
 # Wait until the processes have been shut down
 while pgrep -u $UID -x polybar >/dev/null; do sleep 5; done
