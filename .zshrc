@@ -68,6 +68,8 @@ ZSH_THEME="arrow"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
+export LANG=en_US.utf8
+export LC_ALL=en_US.utf8
 plugins=(git)
 plugins=(zsh-autosuggestions)
 
@@ -78,8 +80,6 @@ source $ZSH/oh-my-zsh.sh
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
-# export LANG=en_US.UTF-8
-
 # Preferred editor for local and remote sessions
 # if [[ -n $SSH_CONNECTION ]]; then
 #   export EDITOR='vim'
@@ -102,12 +102,12 @@ source $ZSH/oh-my-zsh.sh
 #
 #
 # ALIAS SECTION #
-alias cp="cp -i"                                                # Confirm before overwriting something
+alias cp='cp -i'                                                # Confirm before overwriting something
 alias df='df -h'                                                # Human-readable sizes
 alias free='free -m'                                            # Show sizes in MB
 #alias sxiv='sxiv -b -a'
-alias lsa="exa -la"
-alias ls="exa -l"
+alias lsa="exa -lah"
+alias ls="exa -lh"
 alias cat="bat"
 alias astmx="tmux a -t stats"
 alias amtmx="tmux a -t main"
@@ -116,7 +116,7 @@ alias nvt='nvtop nvtop'
 alias dmen='dmenu_run -nb "$color0" -nf "$color15" -sb "$color1" -sf "$color15"'
 alias icat="kitty +kitten icat"
 alias emacs="emacs -nw"
-alias neofetch=" neofetch --backend kitty --source ~/Drive/h4pZ/pictures/henrikaau/furor.png --package_managers off --gtk_shorthand off --gtk2 off --gtk3 off --uptime_shorthand tiny --size 270px --memory_display off --config .neofetchrc"
+alias neofetch=" neofetch --backend kitty --source ~/Drive/h4pZ/pictures/mcp.jpg --package_managers off --gtk_shorthand off --gtk2 off --gtk3 off --uptime_shorthand tiny --size 270px --memory_display off --config .neofetchrc"
 alias copy='xclip -sel clip'
 alias tock='tock -m -c -s -C=6'
 alias vim='nvim'
@@ -124,6 +124,7 @@ alias imshow='sxiv -a -b -t ./*'
 alias lg='lazygit'
 alias cpwd='pwd | copy'
 alias screenkey='screenkey --scr 1 -s small -f "Office Code Pro" --opacity 0.5'
+alias nnn="nnn -e -a"
 
 # EXPORT SECTION #
 
@@ -132,7 +133,9 @@ export NNN_BMS='w:~/Drive/h4pZ/pictures/wallbase;p:~/Drive/h4pZ/pictures;s:~/Dri
 export NNN_NOTE='~/Drive/h4pZ/notes.txt'
 export NNN_USE_EDITOR=1
 export NNN_PLUG='s:sxiv;c:code;z:zathura;v:vlc;g:_lazygit'
-export NNN_COLORS='1234'
+export NNN_COLORS='6327'
+export BAT_THEME='Nord'
+export NNN_FCOLORS='00006fa100c67bbd000000d0'
 export VISUAL=nvim              
 
 # Other exports.
@@ -167,25 +170,37 @@ unset __conda_setup
 conda deactivate
 # <<< conda initialize <<<xport LESS=-r
 
-
-# nnn.
-n()
+n ()
 {
-    export NNN_TMPFILE=${XDG_CONFIG_HOME:-$HOME/.config}/nnn/.lastd
+    # Block nesting of nnn in subshells
+    if [ -n $NNNLVL ] && [ "${NNNLVL:-0}" -ge 1 ]; then
+        echo "nnn is already running"
+        return
+    fi
 
-    nnn -e -C "$@"
+    # The default behaviour is to cd on quit (nnn checks if NNN_TMPFILE is set)
+    # To cd on quit only on ^G, remove the "export" as in:
+    #     NNN_TMPFILE="${XDG_CONFIG_HOME:-$HOME/.config}/nnn/.lastd"
+    # NOTE: NNN_TMPFILE is fixed, should not be modified
+    export NNN_TMPFILE="${XDG_CONFIG_HOME:-$HOME/.config}/nnn/.lastd"
 
-    if [ -f $NNN_TMPFILE ]; then
-            . $NNN_TMPFILE
-            rm $NNN_TMPFILE
+    # Unmask ^Q (, ^V etc.) (if required, see `stty -a`) to Quit nnn
+    # stty start undef
+    # stty stop undef
+    # stty lwrap undef
+    # stty lnext undef
+
+    nnn "$@"
+
+    if [ -f "$NNN_TMPFILE" ]; then
+            . "$NNN_TMPFILE"
+            rm -f "$NNN_TMPFILE" > /dev/null
     fi
 }
 
-alias n='n -e'
-
 # Prompt.
 setopt prompt_subst
-PROMPT="λ %B%{$fg[cyan]%}%(4~|%-1~/.../%2~|%~)%u%b %{$fg[cyan]%}>%B%{$reset_color%}%b "
+PROMPT="$USER @ Λ %B%{$fg[cyan]%}%(4~|%-1~/.../%2~|%~)%u%b %{$fg[cyan]%}>%B%{$reset_color%}%b "
 
 
 # FZF

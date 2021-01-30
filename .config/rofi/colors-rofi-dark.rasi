@@ -1,4 +1,10 @@
 * {
+    background: #17171700;
+    background-color: @background;
+    foreground: #ffffff;
+    border-color: #ffffff;
+    spacing: 9;
+	transparency: "real";
     active-background: #3b4252;
     active-foreground: @foreground;
     normal-background: @background;
@@ -20,16 +26,11 @@
     selected-urgent-background: #8A798A;
     selected-urgent-foreground: @foreground;
 
-    background-color: @background;
-    background: #86676f;
-    foreground: #ffffff;
-    border-color: #81a1c1;
-    spacing: 9;
 }
 
 #window {
-    background-color: #86676f;
-    border: 0;
+    background-color: #171717CC;
+    border: 1;
     padding: 2.5ch;
 	border-radius: 10px;
 	transparency: "real";
@@ -45,6 +46,7 @@
 #message {
     border: 2px 0px 0px;
     border-color: @background;
+	transparency: "real";
     padding: 1px;
 }
 
