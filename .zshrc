@@ -125,6 +125,7 @@ alias lg='lazygit'
 alias cpwd='pwd | copy'
 alias screenkey='screenkey --scr 1 -s small -f "Office Code Pro" --opacity 0.5'
 alias nnn="nnn -e -a"
+alias corona="curl https://corona-stats.online/"
 
 # EXPORT SECTION #
 
@@ -132,11 +133,12 @@ alias nnn="nnn -e -a"
 export NNN_BMS='w:~/Drive/h4pZ/pictures/wallbase;p:~/Drive/h4pZ/pictures;s:~/Drive/h4pZ/universities/master/semesters/;C:~/Drive/h4pZ/code/;b:~/Drive/h4pZ/books/;d:~/Drive/h4pZ/;c:~/.config/;o:/home/h4pz/Drive/h4pZ/personal/jobs/ocox-EB'
 export NNN_NOTE='~/Drive/h4pZ/notes.txt'
 export NNN_USE_EDITOR=1
-export NNN_PLUG='s:sxiv;c:code;z:zathura;v:vlc;g:_lazygit'
+export NNN_PLUG='s:sxiv;c:code;z:zathura;v:vlc;g:_lazygit;p:preview-tui'
 export NNN_COLORS='6327'
 export BAT_THEME='Nord'
 export NNN_FCOLORS='00006fa100c67bbd000000d0'
 export VISUAL=nvim              
+export USE_VIDEOTHUMB=1
 
 # Other exports.
 export CUDA_DIR='/opt/cuda'                    # For JAX.
