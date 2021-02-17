@@ -123,7 +123,7 @@ alias vim='nvim'
 alias imshow='sxiv -a -b -t ./*'
 alias lg='lazygit'
 alias cpwd='pwd | copy'
-alias screenkey='screenkey --scr 1 -s small -f "Office Code Pro" --opacity 0.5'
+alias screenkey='screenkey --scr 0 -s small -f "Office Code Pro" --opacity 0.5'
 alias nnn="nnn -e -a"
 alias corona="curl https://corona-stats.online/"
 

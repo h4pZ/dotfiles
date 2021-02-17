@@ -136,6 +136,7 @@ feh --bg-fill ~/.config/wall
 
 # source the colors.
 . "${HOME}/.cache/wal/colors.sh"
+fcitx5 -d &
 
 # Set the border colors.
 bspc config normal_border_color "$color1"
