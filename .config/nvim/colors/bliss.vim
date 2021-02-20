@@ -14,14 +14,14 @@ let g:base16_gui03 = "5d5d5d"
 let s:gui04        = "8fe2c4"
 let g:base16_gui04 = "8fe2c4"
 
-let s:gui05        = "fdf9f7"
-let g:base16_gui05 = "fdf9f7"
+let s:gui05        = "ffffff"
+let g:base16_gui05 = "ffffff"
 
 let s:gui06        = "d6d5d8"
 let g:base16_gui06 = "d6d5d8"
 
-let s:gui07        = "fdf9f7"
-let g:base16_gui07 = "fdf9f7"
+let s:gui07        = "ffffff"
+let g:base16_gui07 = "ffffff"
 " red
 let s:gui08        = "DE9DAC"
 let g:base16_gui08 = "DE9DAC"
