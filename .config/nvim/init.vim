@@ -13,3 +13,4 @@ source $HOME/.config/nvim/keys/which-key.vim
 source $HOME/.config/nvim/plug-config/signify.vim
 source $HOME/.config/nvim/plug-config/vim-slime.vim
 source $HOME/.config/nvim/plug-config/julia-vim.vim
+source $HOME/.config/nvim/plug-config/airline.vim

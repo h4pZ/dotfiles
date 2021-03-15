@@ -126,6 +126,7 @@ alias cpwd='pwd | copy'
 alias screenkey='screenkey --scr 0 -s small -f "Office Code Pro" --opacity 0.5'
 alias nnn="nnn -e -a"
 alias corona="curl https://corona-stats.online/"
+alias mpv="devour mpv"
 
 # EXPORT SECTION #
 
@@ -135,7 +136,7 @@ export NNN_NOTE='~/Drive/h4pZ/notes.txt'
 export NNN_USE_EDITOR=1
 export NNN_PLUG='s:sxiv;c:code;z:zathura;v:vlc;g:_lazygit;p:preview-tui'
 export NNN_COLORS='6327'
-export BAT_THEME='Nord'
+export BAT_THEME='Monokai Extended Bright'
 export NNN_FCOLORS='00006fa100c67bbd000000d0'
 export VISUAL=nvim              
 export USE_VIDEOTHUMB=1

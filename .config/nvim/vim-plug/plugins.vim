@@ -42,4 +42,5 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'junegunn/gv.vim'
     Plug 'jpalardy/vim-slime'
     Plug 'JuliaEditorSupport/julia-vim'
+    Plug 'Yggdroot/indentLine'
     call plug#end()
