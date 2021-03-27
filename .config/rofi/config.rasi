@@ -1,8 +1,8 @@
 configuration {
 	modi:"drun,window,run";
-    width: 20;
+    width: 25;
     columns: 1;
-    font: "Office Code Pro 11";
+    font: "Source Code Pro Medium 11";
     theme:"/home/h4pz/.config/rofi/colors-rofi-dark.rasi";
     sidebar-mode: true;
     tokenize: true;

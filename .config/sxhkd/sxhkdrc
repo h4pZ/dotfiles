@@ -125,7 +125,7 @@ super + shift + {comma,period}
 
 # Triggered by jus tapping super 
 super + shift + space
-	rofi -show drun -display-drun "launch"
+	rofi -modi drun,run -show drun -display-drun "launch:" -show-icons
 
 super + n
 	kill -s USR1 $(pidof deadd-notification-center)
