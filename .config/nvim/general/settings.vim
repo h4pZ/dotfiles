@@ -66,3 +66,6 @@ noremap <Leader>P "+p
 " Enable code folding
 set foldmethod=indent
 set foldlevel=99
+
+" Because neovim hides ` idk why
+set conceallevel=0

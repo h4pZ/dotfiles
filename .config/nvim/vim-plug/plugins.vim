@@ -44,4 +44,5 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'JuliaEditorSupport/julia-vim'
     Plug 'Yggdroot/indentLine'
     Plug 'liuchengxu/vista.vim'
+    Plug 'lukas-reineke/indent-blankline.nvim'
     call plug#end()

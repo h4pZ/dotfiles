@@ -116,7 +116,7 @@ alias nvt='nvtop nvtop'
 alias dmen='dmenu_run -nb "$color0" -nf "$color15" -sb "$color1" -sf "$color15"'
 alias icat="kitty +kitten icat"
 alias emacs="emacs -nw"
-alias neofetch=" neofetch --backend kitty --source ~/Drive/h4pZ/pictures/mcp.jpg --package_managers off --gtk_shorthand off --gtk2 off --gtk3 off --uptime_shorthand tiny --size 270px --memory_display off --config .neofetchrc"
+alias neofetch=" neofetch --backend kitty --source ~/Drive/h4pZ/pictures/mcp.jpg --package_managers off --gtk_shorthand off --gtk2 off --gtk3 off --uptime_shorthand tiny --size 270px --memory_display off --config ~/.neofetchrc"
 alias copy='xclip -sel clip'
 alias tock='tock -m -c -s -C=6'
 alias vim='nvim'
@@ -127,6 +127,7 @@ alias screenkey='screenkey --scr 0 -s small -f "Office Code Pro" --opacity 0.5'
 alias nnn="nnn -e -a"
 alias corona="curl https://corona-stats.online/"
 alias mpv="devour mpv"
+alias yt="ytfzf -t"
 
 # EXPORT SECTION #
 
@@ -135,9 +136,9 @@ export NNN_BMS='w:~/Drive/h4pZ/pictures/wallbase;p:~/Drive/h4pZ/pictures;s:~/Dri
 export NNN_NOTE='~/Drive/h4pZ/notes.txt'
 export NNN_USE_EDITOR=1
 export NNN_PLUG='s:sxiv;c:code;z:zathura;v:vlc;g:_lazygit;p:preview-tui'
-export NNN_COLORS='6327'
+export NNN_COLORS='3627'
 export BAT_THEME='Monokai Extended Bright'
-export NNN_FCOLORS='00006fa100c67bbd000000d0'
+export NNN_FCOLORS='0000daa100c67bbd000000d0'
 export VISUAL=nvim              
 export USE_VIDEOTHUMB=1
 
@@ -146,6 +147,7 @@ export CUDA_DIR='/opt/cuda'                    # For JAX.
 export TERM=xterm-kitty
 export PATH=$PATH:$HOME/.cargo/env             # For rust.
 export LD_LIBRARY_PATH=/usr/local/cuda/lib64   # For tensorflow.
+export PYTHONPATH="/home/h4pz/Repos/"          # For kitty backend.
 
 # Color man pages
 export LESS_TERMCAP_mb=$'\E[01;32m'
@@ -203,7 +205,7 @@ n ()
 
 # Prompt.
 setopt prompt_subst
-PROMPT="$USER @ Λ %B%{$fg[cyan]%}%(4~|%-1~/.../%2~|%~)%u%b %{$fg[cyan]%}>%B%{$reset_color%}%b "
+PROMPT="%F{238}$USER-Λ%f %B%{$fg[yellow]%}%(4~|%-1~/.../%2~|%~)%u%b %{$fg[yellow]%}>%B%{$reset_color%}%b "
 
 
 # FZF

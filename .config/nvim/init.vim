@@ -15,3 +15,4 @@ source $HOME/.config/nvim/plug-config/vim-slime.vim
 source $HOME/.config/nvim/plug-config/julia-vim.vim
 source $HOME/.config/nvim/plug-config/airline.vim
 source $HOME/.config/nvim/plug-config/vista.vim
+source $HOME/.config/nvim/plug-config/indentline.vim
