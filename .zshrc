@@ -211,3 +211,4 @@ PROMPT="%F{238}$USER-Λ%f %B%{$fg[yellow]%}%(4~|%-1~/.../%2~|%~)%u%b %{$fg[yello
 # FZF
 source /usr/share/fzf/completion.zsh
 source /usr/share/fzf/key-bindings.zsh
+export PATH=$HOME/.config/nvcode/utils/bin:$PATH
