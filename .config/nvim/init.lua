@@ -11,6 +11,7 @@ require('lsp')
 -- TODO: this doesn't work for some reason require('nv-lspinstall')
 require('nv-lspkind')
 require('lsp.python-ls')
+require('lsp.sql-ls')
 
 -- Debug
 require('nv-nvim-dap')
@@ -32,3 +33,4 @@ vim.cmd('source ~/.config/nvim/vimscript/nv-whichkey/init.vim')
 require('nv-floaterm')
 require('nv-dadbod')
 require('nv-doge')
+require('nv-presence')
