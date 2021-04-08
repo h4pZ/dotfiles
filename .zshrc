@@ -146,6 +146,7 @@ export USE_VIDEOTHUMB=1
 export CUDA_DIR='/opt/cuda'                    # For JAX.
 export TERM=xterm-kitty
 export PATH=$PATH:$HOME/.cargo/env             # For rust.
+export PATH=$PATH:$HOME/go/bin                 # For go.
 export LD_LIBRARY_PATH=/usr/local/cuda/lib64   # For tensorflow.
 export PYTHONPATH="/home/h4pz/Repos/"          # For kitty backend.
 

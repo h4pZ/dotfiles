@@ -144,6 +144,10 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/h4pz/.local/share/nvim/site/pack/packer/start/vim-devicons"
   },
+  ["vim-doge"] = {
+    loaded = true,
+    path = "/home/h4pz/.local/share/nvim/site/pack/packer/start/vim-doge"
+  },
   ["vim-floaterm"] = {
     loaded = true,
     path = "/home/h4pz/.local/share/nvim/site/pack/packer/start/vim-floaterm"

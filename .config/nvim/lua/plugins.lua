@@ -81,4 +81,7 @@ return require('packer').startup(function(use)
     -- Documentation Generator 
     use {'kkoomen/vim-doge', run = ':call doge#install()'}
 
+	-- Discord
+	use 'andweeb/presence.nvim'
+
 end)
