@@ -112,6 +112,10 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/h4pz/.local/share/nvim/site/pack/packer/start/popup.nvim"
   },
+  ["presence.nvim"] = {
+    loaded = true,
+    path = "/home/h4pz/.local/share/nvim/site/pack/packer/start/presence.nvim"
+  },
   ["telescope-media-files.nvim"] = {
     loaded = true,
     path = "/home/h4pz/.local/share/nvim/site/pack/packer/start/telescope-media-files.nvim"
